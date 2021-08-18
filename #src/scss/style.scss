@@ -1,0 +1,9 @@
+@import "mixins";
+@import "fonts";
+@import "reset";
+@import "variables";
+@import "#general";
+
+//blocks
+@import "blocks/menu.scss";
+@import "blocks/mobile-app.scss";
