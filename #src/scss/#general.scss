@@ -1,11 +1,25 @@
+*{
+	font-family: Formular;
+	color: #282828;
+}
+
 a {
-	color: black;
+	color: #321F54;
 }
 
 .container{
 	margin: 0 auto;
 	max-width: 1320px;
 }
-*{
-	font-family: Formular;
+
+.long-grey-divider {
+	width: 1324px;
+	height: 1px;
+	background: #DBDBDB;
+}
+
+.orange-divider {
+	background: #FF843F;
+	height: 1px;
+	width: 340px;
 }

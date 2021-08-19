@@ -1,0 +1,121 @@
+.tech-of-future {
+	padding: 53px 0px 120px 0px;
+	background-color: #FFFFFF;
+	background-image: url('../img/sections/tehnology/grey-pixeles.svg');
+	background-repeat: no-repeat;
+	background-position: 54% -18%;
+	background-size: 28%;
+	&__info-wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__text-wrapper {
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 47px;
+	}
+
+	&__text {
+		margin-top: 29px;
+		font-size: 18px;
+		line-height: 25.5px;
+		max-width: 601px;
+	}
+
+	&__text-main-word {
+		color: #563CBC;
+		font-weight: 900;
+	}
+
+	&__img-wrapper {
+		margin-top: 13px;
+		margin-right: 112px;
+		border-radius: 6px;
+		position: relative;
+		background: linear-gradient(180deg, #563CBC 0%, #200B73 100%);
+		max-width: 382px;
+		max-height: 250px;
+		padding: 48px 58px 38px 59px;
+	}
+
+	&__img-text {
+		color: #FFFFFF;
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	&__img-img {
+		position: absolute;
+		left: -148px;
+		bottom: -88px;
+	}
+
+	&__icons-wrapper {
+		margin: 0 auto;
+		max-width: 1300px;
+		display: flex;
+		margin-top: 95px;
+		justify-content: space-between;
+	}
+
+	&__element {
+		display: flex;
+		align-items: center;
+	}
+
+	&__element-text {
+		margin-top: 10px;
+		margin-left: 13px;
+		font-weight: bold;
+		font-size: 14px;
+		color: #282828;
+	}
+	&__divider{
+		margin-top: 55px;
+	}
+
+	&__companys {
+	}
+
+	&__companys-subtitle {
+		margin-top: 50px;
+		font-weight: bold;
+		font-size: 22px;
+		line-height: 28px;
+		text-align: center;
+	}
+
+	&__companys-logos {
+		margin-top: 20px;
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+	}
+
+	&__company-logo {
+		display: flex;
+		align-items: center;
+		&:nth-child(2){
+			margin-top: 15px;
+		}
+		&:nth-child(5){
+			margin-top: 7px;
+		}
+	}
+
+	&__company-logo-img {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+		transition: all 0.4s;
+		&:hover{
+			-webkit-filter: none;
+			filter: none;
+		}
+	}
+}
+
+
