@@ -1,0 +1,86 @@
+.study-process {
+	padding: 61px 0 75px 0;
+	&__wrapper{
+		display: flex;
+		align-items: center ;
+	}
+	&__wrapper-text {
+		max-width: 653px;
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 40px;
+	}
+	&__text {
+		margin-top: 40px;
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	&__boxes {
+		margin-left: 130px;
+		max-width: 426px;
+		min-height: 426px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: space-between;
+	}
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding: 29px 0 19px 0;
+		width: 180px;
+		height: 180px;
+		background: #F2F2F2;
+		border-radius: 16px;
+	}
+
+	&__box-3, &__box-2 {
+		position: relative;
+	}
+
+	&__box-img-extra.two{
+		position: absolute;
+		width: 139px;
+		bottom: -62px;
+		left: -89px;
+	}
+	&__box-img-extra.three{
+		position: absolute;
+		width: 139px;
+		bottom: -42px;
+		left: -74px;
+	}
+	&__box-title {
+		font-size: 9px;
+		font-weight: bold;
+		letter-spacing: 0.195em;
+		text-transform: uppercase;
+		color: #808080;
+	}
+	&__box-img.one{
+		width: 92px;
+	}
+	&__box-img.two{
+		width: 91px;
+	}
+	&__box-img.three{
+		width: 131px;
+	}
+
+	&__box-img.four{
+		width: 44px;
+	}
+
+	&__box-subtitle {
+		margin-top: 5px;
+		color: #282828;
+		font-weight: bold;
+		font-size: 18px;
+	}
+}

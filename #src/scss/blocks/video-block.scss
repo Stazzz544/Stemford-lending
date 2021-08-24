@@ -1,0 +1,40 @@
+.video-block{
+	padding-top: 226px;
+	padding-bottom: 106px;
+	background: #F5F6F7;
+		&__wrapper {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+		}
+
+		&__youtube-wrapper {
+			width: 654px;
+			height: 406px;
+			border-radius: 36px;
+			overflow: hidden;
+		}
+
+		&__text-wrapper {
+			width: 542px;
+
+		}
+
+		&__title {
+			color: #200B73;
+			font-size: 34px;
+		}
+
+		&__subtitle {
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 47px;
+		}
+
+		&__text {
+			margin-top: 15px;
+			font-size: 15px;
+			line-height: 22px;
+		}
+}

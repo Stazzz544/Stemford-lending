@@ -70,7 +70,7 @@ function browserSync(params) {//функция обновления нашей �
 function html() {
 	return src(path.src.html)//получаем исходник
 		.pipe(fileinclude())
-		.pipe(webphtml())
+		// .pipe(webphtml()) //включает и выключает конвертацию в webp
 		.pipe(dest(path.build.html))//выводим
 		.pipe(browsersync.stream())
 }
@@ -91,7 +91,7 @@ function css() {//Задачи выолнения
 				cascade: true
 			})
 		)
-		.pipe(webpcss())
+		// .pipe(webpcss())
 		.pipe(dest(path.build.css))//выводим
 		.pipe(clean_css())
 		.pipe(
@@ -121,21 +121,21 @@ function js() {
 
 function images() {
 	return src(path.src.img)//получаем исходник
-		.pipe(
-			webp({
-				quality: 70//качество сконвертированной картинки
-			})
-		)
+		// .pipe(
+		// 	webp({
+		// 		quality: 100//качество сконвертированной картинки
+		// 	})
+		// )
 		.pipe(dest(path.build.img))//выводим
 		.pipe(src(path.src.img))
-		.pipe(
-			imagemin({
-				progressive: true,
-				svgoPlugins: [{removeViewBox: false }],
-				interlaced: true,
-				optimizationLevel: 3 // 0 to 7
-			})
-		)
+		// .pipe(
+		// 	imagemin({
+		// 		progressive: true,
+		// 		svgoPlugins: [{removeViewBox: false }],
+		// 		interlaced: true,
+		// 		optimizationLevel: 3 // 0 to 7
+		// 	})
+		// )
 		.pipe(dest(path.build.img))//выводим
 		.pipe(browsersync.stream())
 }

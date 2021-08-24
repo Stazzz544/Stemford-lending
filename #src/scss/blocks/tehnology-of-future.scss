@@ -50,6 +50,7 @@
 
 	&__img-img {
 		position: absolute;
+		height: 250px;
 		left: -148px;
 		bottom: -88px;
 	}
@@ -115,6 +116,36 @@
 			-webkit-filter: none;
 			filter: none;
 		}
+	}
+	&__company-logo-img.one {
+		height: 63px;
+	}
+	&__company-logo-img.two {
+		height: 40px;
+	}
+	&__company-logo-img.three {
+		height: 43px;
+	}
+	&__company-logo-img.four {
+		height: 84px;
+	}
+	&__company-logo-img.five {
+		height: 31px;
+	}
+	&__company-logo-img.six {
+		height: 24px;
+	}
+	&__company-logo-img.seven {
+		height: 30px;
+	}
+	&__company-logo-img.eight {
+		height: 45px;
+	}
+	&__company-logo-img.nine {
+		height: 28x;
+	}
+	&__company-logo-img.ten {
+		height: 47px;
 	}
 }
 

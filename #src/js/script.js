@@ -1,20 +1,24 @@
-//функция для подключения webp
-function testWebP(callback) {
+//Tabs
 
-	var webP = new Image();
-	webP.onload = webP.onerror = function () {
-		callback(webP.height == 2);
-	};
-	webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
+const tabBorder = document.querySelectorAll('.tabs-section__tab-nav-item');
+const tabText = document.querySelectorAll('.tabs-section__tab-nav-item-text');
+const tabImg = document.querySelectorAll('.tabs-section__tab-nav-item-img');
+console.log(tabImg)
+
+tabText.forEach((e) => {
+	e.addEventListener('click', (e) => {
+		const target = e.target;
+		borderActive()
+	})
+})
+
+
+
+function borderActive() {
+	
+	tabText.forEach((q, w) => {
+		if (tabText[w] === target) {
+			console.log('work')
+		}
+	})
 }
-
-testWebP(function (support) {
-
-	if (support == true) {
-		document.querySelector('body').classList.add('webp');
-	} else {
-		document.querySelector('body').classList.add('no-webp');
-	}
-});
-
-//==================================
