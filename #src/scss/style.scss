@@ -4,12 +4,15 @@
 @import "variables";
 @import "#general";
 
+//libs
+@import "libs/swiper-bundle.min";
+
 //blocks
-@import "blocks/menu.scss";
-@import "blocks/mobile-app.scss";
+@import "blocks/menu";
+@import "blocks/mobile-app";
 @import "blocks/tehnology-of-future";
 @import "blocks/advantages";
 @import "blocks/video-block";
 @import "blocks/study-process";
 @import "blocks/tabs-section";
-
+@import "blocks/course-programm";
