@@ -1,24 +1,32 @@
-//Tabs
 
-const tabBorder = document.querySelectorAll('.tabs-section__tab-nav-item');
-const tabText = document.querySelectorAll('.tabs-section__tab-nav-item-text');
-const tabImg = document.querySelectorAll('.tabs-section__tab-nav-item-img');
-console.log(tabImg)
+//main Tab function
+const tabs = document.querySelectorAll('.tabs-section__tab-nav-item');
 
-tabText.forEach((e) => {
-	e.addEventListener('click', (e) => {
-		const target = e.target;
-		borderActive()
+tabs.forEach((tab) => {
+	tab.addEventListener('click', (event) => {
+		const target = event.target.closest('.tabs-section__tab-nav-item');
+		const tabText = document.querySelectorAll('.tabs-section__tab-nav-item-text');
+		const tabImg = document.querySelectorAll('.tabs-section__tab-nav-item-img');
+		const content = document.querySelectorAll('.tabs-section__content');
+		deleteActiveClass(content, tabImg, tabImg, tabText, tabs)
+		addActiveClass(target, tabs, tabText, tabImg, content)
 	})
 })
 
-
-
-function borderActive() {
-	
-	tabText.forEach((q, w) => {
-		if (tabText[w] === target) {
-			console.log('work')
+function addActiveClass(target, buttons, ...anotherClasses) {
+	buttons.forEach((button, numButton)=> {
+		if (target === button) {
+			buttons[numButton].classList.add('active')
+			anotherClasses.forEach(elem=>{
+				elem[numButton].classList.add('active')
+			})
 		}
+	})
+}
+
+function deleteActiveClass(...deleteActiveClassAllElements) {
+	deleteActiveClassAllElements.forEach(nodes => { nodes.forEach(elem=> {
+			if (elem.classList.contains('active')) elem.classList.remove('active')
+		})
 	})
 }
