@@ -1,6 +1,7 @@
 .advantages {
+	z-index: -1000!important;
 	position: relative;
-	max-height: 491px;
+	height: 491px;
 	background: #563CBC;
 	&__up-bg {
 		z-index: -1;

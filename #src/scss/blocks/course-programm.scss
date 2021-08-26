@@ -2,6 +2,7 @@
 //========slide styles===========
 .course-programm {
 	padding: 49px 0 122px 0;
+	background: #FFFFFF;
 
 		&__title {
 			font-weight: bold;
@@ -106,13 +107,13 @@
 .course-slide{
 	transform: translateY(0px);
 	transition: transform .3s;
-    transition-delay: 0.4s;
+   //transition-delay: 0.4s;
 }
 .swiper-slide-active{
 	position: relative;
 	transform: translateY(-50px);
 	transition: transform .3s;
-    transition-delay: 0.4s;
+   //transition-delay: 0.4s;
  }
 
 
