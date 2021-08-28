@@ -1,0 +1,52 @@
+
+.footer {
+	background: #F5F5F5;
+		&__body{
+			min-height: 96px;
+			height: 1px;
+			padding: 24px 0;
+		}
+		&__wrapper {
+			height: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__item-section {
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		&__item {
+		}
+		&__item.center {
+			display: flex;
+			justify-content: center;
+		}
+
+		&__item-link {
+			font-size: 13px; 
+		}
+		&__item-link.costum {
+			position: relative;
+			color: #325EFA;
+			&::after{
+				content:'';
+				position: absolute;
+				width: 16px;
+				height: 16px;
+				left: -20px;
+				top: 0;
+				background: url('../img/sections/footer/arrow-up.svg') 50% no-repeat;
+			}
+		}
+
+		&__item-divider {
+			margin: 0 8px;
+			width: 1px;
+			height: 12px;
+			background-color: #282828;
+		}
+}

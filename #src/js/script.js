@@ -1,5 +1,26 @@
 @@include('swiper-bundle.min.js');
 
+//===swiper slider===
+
+const swiper = new Swiper('.swiper', {
+	// Optional parameters
+	direction: 'horizontal',
+	loop: true,
+	centeredSlides: true,
+	initialSlide: 1,
+	slidesPerView: 3,
+	//delay: 400,
+	spaceBetween: 30, //Расстояние между слайдами в пикселях.
+	// autoplay: {
+	// 	delay: 4000,
+	//  },
+
+	// Navigation arrows
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+ });
 
 //main Tab function
 const tabs = document.querySelectorAll('.tabs-section__tab-nav-item');
@@ -34,24 +55,22 @@ function deleteActiveClass(...deleteActiveClassAllElements) {
 	})
 }
 
-//===swiper slider===
 
-const swiper = new Swiper('.swiper', {
-	// Optional parameters
-	direction: 'horizontal',
-	loop: true,
-	centeredSlides: true,
-	initialSlide: 1,
-	slidesPerView: 3,
-	//delay: 400,
-	spaceBetween: 30, //Расстояние между слайдами в пикселях.
-	// autoplay: {
-	// 	delay: 4000,
-	//  },
 
-	// Navigation arrows
-	navigation: {
-	  nextEl: '.swiper-button-next',
-	  prevEl: '.swiper-button-prev',
-	},
- });
+ //spoiler
+
+const spoilers = document.querySelectorAll('.questions__item-wrapper')
+spoilers.forEach(e => e.addEventListener('click', (e) => spoiler(e.target)))
+
+const spoiler = (eventTarget) => {
+	const spoilerTarget = eventTarget.closest('.questions__item-title-wrapper')
+	const spoilerGlobal = spoilerTarget.closest('.questions__item-wrapper')
+
+	const spoilerBody = spoilerGlobal.querySelector('.questions__item-text')
+	const spoilerBtn = spoilerGlobal.querySelector('.questions__item-title-btn')
+
+	spoilerBody.classList.toggle('active')
+	spoilerBtn.classList.toggle('active')
+
+
+}

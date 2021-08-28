@@ -3,7 +3,7 @@
 @import "reset";
 @import "variables";
 @import "#general";
-@import "life-bg";
+//@import "life-bg";
 
 //libs
 @import "libs/swiper-bundle.min";
@@ -18,3 +18,5 @@
 @import "blocks/tabs-section";
 @import "blocks/course-programm";
 @import "blocks/price";
+@import "blocks/questions";
+@import "blocks/footer";
