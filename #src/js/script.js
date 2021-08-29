@@ -4,13 +4,25 @@
 
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
+	breakpoints: {
+		320: {
+		  slidesPerView: 1,
+		  initialSlide: 4,
+		  spaceBetween: 0,
+		  spaceBetween: 30,
+		},
+		1350: {
+		  slidesPerView: 3,
+		  spaceBetween: 30,
+		}
+	},
 	direction: 'horizontal',
 	loop: true,
 	centeredSlides: true,
 	initialSlide: 1,
-	slidesPerView: 3,
+ //Расстояние между слайдами в пикселях.
 	//delay: 400,
-	spaceBetween: 30, //Расстояние между слайдами в пикселях.
+	
 	// autoplay: {
 	// 	delay: 4000,
 	//  },
@@ -20,6 +32,7 @@ const swiper = new Swiper('.swiper', {
 	  nextEl: '.swiper-button-next',
 	  prevEl: '.swiper-button-prev',
 	},
+
  });
 
 //main Tab function

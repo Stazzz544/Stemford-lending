@@ -141,3 +141,49 @@
 		line-height: 15px;
 	}
 }
+
+@media (max-width: 1150px) {
+	.price__wrapper{
+		flex-direction: column;
+		align-items:center;
+		width: auto;
+	}
+	.price__form{
+		margin-top: 40px;
+	}
+		.price__form::before {
+		width: 109px;
+		height: 90px;
+		bottom: -50px;
+		left: 9px;
+	}
+}
+
+@media (max-width: 558px) {
+	.price__text-wrapper {
+		width: auto;
+  }
+  .price__form{
+	width: auto;
+	height: auto;
+  }
+  .price__form-personal-data{
+	  width: auto;
+  }
+}
+
+@media (max-width: 520px) {
+	.price__form {
+		padding: 46px 32px 47px 32px;
+	}
+}
+
+@media (max-width: 444px) {
+	.price__form-title {
+		font-size: 28px;
+	}
+	.price__form {
+		padding: 25px 17px 45px 17px;
+		border-radius: 28px;
+  }
+}

@@ -1,6 +1,7 @@
 *{
 	font-family: Formular;
 	color: #282828;
+	//border: 1px red solid
 }
 
 a {
@@ -13,11 +14,12 @@ html{
 
 .container{
 	margin: 0 auto;
-	max-width: 1320px;
+	padding: 0px 15px;
+	max-width: 1334px;
 }
 
 .long-grey-divider {
-	width: 1324px;
+	max-width: 1340px;
 	height: 1px;
 	background: #DBDBDB;
 }
@@ -25,7 +27,7 @@ html{
 .orange-divider {
 	background: #FF843F;
 	height: 1px;
-	width: 340px;
+	width: 100%;
 }
 
 

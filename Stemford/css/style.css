@@ -145,11 +145,12 @@ html {
 
 .container {
   margin: 0 auto;
-  max-width: 1320px;
+  padding: 0px 15px;
+  max-width: 1334px;
 }
 
 .long-grey-divider {
-  width: 1324px;
+  max-width: 1340px;
   height: 1px;
   background: #DBDBDB;
 }
@@ -157,7 +158,32 @@ html {
 .orange-divider {
   background: #FF843F;
   height: 1px;
-  width: 340px;
+  width: 100%;
+}
+
+.pix1,
+.pix1-1,
+.pix1-2 {
+  width: 16px;
+  height: 16px;
+}
+
+.pix2,
+.pix2-1,
+.pix5 {
+  width: 48px;
+  height: 32px;
+}
+
+.pix3-1 {
+  width: 32px;
+  height: 32px;
+}
+
+.pix4,
+.pix6 {
+  width: 32px;
+  height: 47px;
 }
 
 /**
@@ -1057,6 +1083,10 @@ button.swiper-pagination-bullet {
   background: #321f54;
 }
 
+.header__auth-reg-mobile {
+  display: none;
+}
+
 .header__auth-reg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1096,6 +1126,10 @@ button.swiper-pagination-bullet {
   margin-right: 0px;
 }
 
+.navigation__item-link {
+  color: #282828;
+}
+
 .navigation__submenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1109,6 +1143,10 @@ button.swiper-pagination-bullet {
   display: block;
   margin-left: 6px;
   margin-top: 2px;
+}
+
+.navigation__submenu-text {
+  color: #282828;
 }
 
 .burger {
@@ -1131,16 +1169,48 @@ button.swiper-pagination-bullet {
 .mobile-app {
   background-color: #F5F6F7;
   padding: 67px 0 120px 0;
-  background-image: url("../img/sections/mobile-app/grey-pixels.svg");
-  background-repeat: no-repeat;
-  background-position: 43% 91%;
-  background-size: auto;
 }
 
 .mobile-app__info {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.mobile-app__info-pixel {
+  display: block;
+  position: absolute;
+}
+
+.mobile-app__info-pixel.pix1 {
+  top: 15%;
+  left: 33%;
+}
+
+.mobile-app__info-pixel.pix1-1 {
+  bottom: 21%;
+  left: 47%;
+}
+
+.mobile-app__info-pixel.pix1-2 {
+  bottom: -16%;
+  left: 19%;
+}
+
+.mobile-app__info-pixel.pix2 {
+  bottom: 8%;
+  left: 38%;
+}
+
+.mobile-app__info-pixel.pix2-1 {
+  top: 21%;
+  left: 51%;
+}
+
+.mobile-app__info-pixel.pix3-1 {
+  top: 57%;
+  right: -2%;
 }
 
 .mobile-app__info-text {
@@ -1196,6 +1266,18 @@ button.swiper-pagination-bullet {
 
 .mobile-app__format {
   margin-top: 97px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mobile-app__forma-flex-wrapper {
+  width: 645px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1272,19 +1354,22 @@ button.swiper-pagination-bullet {
 .tech-of-future {
   padding: 53px 0px 120px 0px;
   background-color: #FFFFFF;
-  background-image: url("../img/sections/tehnology/grey-pixeles.svg");
-  background-repeat: no-repeat;
-  background-position: 54% -18%;
-  background-size: 28%;
 }
 
 .tech-of-future__info-wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.tech-of-future__info-pixel.pix3-1 {
+  position: absolute;
+  bottom: -48px;
+  right: 0px;
 }
 
 .tech-of-future__title {
@@ -1337,6 +1422,8 @@ button.swiper-pagination-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 95px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1377,6 +1464,8 @@ button.swiper-pagination-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1384,6 +1473,7 @@ button.swiper-pagination-bullet {
 }
 
 .tech-of-future__company-logo {
+  margin: 0 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1512,6 +1602,18 @@ button.swiper-pagination-bullet {
   background: #F4F4F4;
 }
 
+.advantages__item-pixel.pix5 {
+  position: absolute;
+  top: 166px;
+  right: -24px;
+}
+
+.advantages__item-pixel.pix4 {
+  position: absolute;
+  top: 176px;
+  left: -24px;
+}
+
 .advantages__item-title {
   font-weight: bold;
   font-size: 26px;
@@ -1559,15 +1661,24 @@ button.swiper-pagination-bullet {
 }
 
 .video-block__wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.video-block__wrapper-pixel {
+  position: absolute;
+  right: 35px;
+  bottom: 0;
 }
 
 .video-block__youtube-wrapper {
@@ -1609,12 +1720,25 @@ button.swiper-pagination-bullet {
 }
 
 .study-process__wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.study-process__wrapper-pixel.pix1 {
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+
+.study-process__wrapper-pixel.pix2-1 {
+  position: absolute;
+  right: 0%;
+  bottom: -5%;
 }
 
 .study-process__wrapper-text {
@@ -1928,6 +2052,34 @@ button.swiper-pagination-bullet {
   line-height: 47px;
   text-align: center;
   color: #FF843F;
+}
+
+.course-programm__wrapper {
+  position: relative;
+}
+
+.course-programm__wrapper-pixel.pix1 {
+  position: absolute;
+  right: 22%;
+  bottom: 0;
+}
+
+.course-programm__wrapper-pixel.pix1-1 {
+  position: absolute;
+  top: -3%;
+  left: 20%;
+}
+
+.course-programm__wrapper-pixel.pix6 {
+  position: absolute;
+  bottom: -1%;
+  left: 33%;
+}
+
+.course-programm__wrapper-pixel.pix2-1 {
+  position: absolute;
+  top: -8%;
+  right: 12%;
 }
 
 .course-slide__wrapper {
@@ -2403,4 +2555,613 @@ button.swiper-pagination-bullet {
   width: 1px;
   height: 12px;
   background-color: #282828;
+}
+
+@media (max-width: 1450px) {
+  .mobile-app__info-pixel.pix3-1 {
+    left: -62px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .course-slide__wrapper {
+    width: 430px;
+    margin: 0 auto;
+  }
+
+  .swiper-button-prev {
+    left: 44%;
+  }
+
+  .swiper-button-next {
+    right: 44%;
+  }
+}
+
+@media (max-width: 1340px) {
+  .mobile-app__format {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .mobile-app__forma-flex-wrapper {
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 20px;
+  }
+
+  .mobile-app__info-pixel.pix2 {
+    bottom: -3%;
+    left: 68%;
+  }
+
+  .mobile-app__info-pixel.pix2-1 {
+    top: 13%;
+    left: 58%;
+  }
+
+  .mobile-app__format-item.item2 {
+    margin-top: 52px;
+  }
+
+  .mobile-app__format-item.item4 {
+    margin-top: 52px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .header__navigation {
+    display: none;
+  }
+}
+
+@media (max-width: 1256px) {
+  .video-block__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .video-block__text-wrapper {
+    margin-top: 30px;
+  }
+
+  .study-process__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .study-process__boxes {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .study-process__wrapper-pixel.pix1 {
+    top: -3%;
+  }
+}
+
+@media (max-width: 1160px) {
+  .tech-of-future__info-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .tech-of-future__text {
+    max-width: none;
+  }
+
+  .tech-of-future__img-wrapper {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .tech-of-future__icons-wrapper {
+    margin-top: 130px;
+    padding-left: 70px;
+    width: 700px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 115px;
+  }
+
+  .tech-of-future__companys-logos {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 1150px) {
+  .price__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: auto;
+  }
+
+  .price__form {
+    margin-top: 40px;
+  }
+
+  .price__form::before {
+    width: 109px;
+    height: 90px;
+    bottom: -50px;
+    left: 9px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .advantages {
+    height: 1080px;
+  }
+
+  .advantages__items-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .advantages__item {
+    height: 502px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .tabs-section__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .tabs-section__text-wrapper {
+    margin-top: 50px;
+    margin-left: 44px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mobile-app__info-pixel.pix1-1 {
+    bottom: 56%;
+    left: 67%;
+  }
+
+  .mobile-app__info-pixel.pix1 {
+    top: 54%;
+    left: 33%;
+  }
+
+  .mobile-app__info-pixel.pix2-1 {
+    top: 9%;
+    left: 58%;
+  }
+
+  .mobile-app__info-pixel.pix2 {
+    bottom: -6%;
+    left: 68%;
+  }
+
+  .mobile-app__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .mobile-app__info-text-wrapper {
+    width: 670px;
+  }
+
+  .mobile-app__info-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .mobile-app__info-img-img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__auth-reg-wrapper {
+    display: none;
+  }
+
+  .header__auth-reg-mobile {
+    display: block;
+    width: 18px;
+    margin-right: 20px;
+  }
+
+  .header__auth-reg-mobile img {
+    width: 100%;
+  }
+
+  .header__logo {
+    width: 170px;
+    height: 33px;
+    margin-left: 10px;
+  }
+
+  .header__logo img {
+    width: 100%;
+  }
+
+  .mobile-app__info-pixel.pix1-1 {
+    bottom: 52%;
+    left: 83%;
+  }
+
+  .mobile-app__info-pixel.pix1 {
+    display: none;
+  }
+
+  .mobile-app__info-img-img {
+    width: 80%;
+    height: auto;
+  }
+
+  .mobile-app__format-item {
+    margin-top: 52px;
+  }
+
+  .mobile-app__format-item.item1 {
+    margin-top: 0;
+  }
+
+  .tech-of-future__icons-wrapper {
+    height: auto;
+    width: 305px;
+    padding: 0;
+    margin-top: 73px;
+  }
+
+  .tech-of-future__element {
+    margin-top: 35px;
+  }
+
+  .video-block__wrapper-pixel {
+    bottom: -73px;
+  }
+
+  .video-block__youtube-wrapper {
+    width: 100%;
+  }
+
+  .video-block__text-wrapper {
+    width: 100%;
+  }
+
+  .video {
+    width: 100%;
+    height: 406px;
+  }
+
+  .tabs-section__tab-nav-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 270px;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+
+  .tabs-section__tab-nav-item {
+    height: 90px;
+    margin-top: 40px;
+  }
+
+  .tabs-section__tab-nav-wrapper {
+    height: auto;
+  }
+
+  .tabs-section__tab-nav-item {
+    height: 72px;
+    margin-top: 26px;
+  }
+}
+
+@media (max-width: 720px) {
+  .course-slide__wrapper {
+    width: 430px;
+    margin: 0 auto;
+  }
+
+  .course-programm__wrapper-pixel.pix2-1 {
+    top: -8%;
+    right: 12%;
+  }
+
+  .course-programm__wrapper-pixel.pix1-1 {
+    top: -3%;
+    left: 20%;
+  }
+
+  .course-programm__wrapper-pixel.pix6 {
+    bottom: -1%;
+    left: 33%;
+  }
+}
+
+@media (max-width: 660px) {
+  .questions {
+    padding: 120px 0 34px 0;
+  }
+
+  .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer__item-section {
+    height: 70px;
+    margin-top: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .footer__body {
+    min-height: 210px;
+  }
+
+  .footer__item {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 630px) {
+  .tech-of-future__img-img {
+    left: -22px;
+    bottom: -175px;
+  }
+
+  .tech-of-future__icons-wrapper {
+    margin-top: 147px;
+  }
+
+  .tech-of-future__img-wrapper {
+    max-height: 430px;
+    padding: 30px 30px 45px 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .advantages {
+    height: auto;
+    padding-bottom: 90px;
+  }
+
+  .advantages__item-side-img-left {
+    height: 147px;
+    top: -90px;
+    left: -1px;
+  }
+
+  .advantages__item {
+    width: 80%;
+    margin-left: -5px;
+    padding: 38px 35px;
+    height: auto;
+  }
+
+  .advantages__item-side-img-right {
+    height: 112px;
+    top: -62px;
+    right: 29px;
+  }
+
+  .video-block {
+    padding-top: 113px;
+  }
+}
+
+@media (max-width: 572px) {
+  .mobile-app__info-pixel.pix1-1 {
+    bottom: 36%;
+    left: 92%;
+  }
+}
+
+@media (max-width: 558px) {
+  .price__text-wrapper {
+    width: auto;
+  }
+
+  .price__form {
+    width: auto;
+    height: auto;
+  }
+
+  .price__form-personal-data {
+    width: auto;
+  }
+}
+
+@media (max-width: 530px) {
+  .study-process__boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .study-process__box {
+    margin-top: 30px;
+  }
+
+  .study-process__box-img-extra.two {
+    left: -78px;
+  }
+}
+
+@media (max-width: 520px) {
+  .course-programm {
+    padding: 49px 0 0px 0;
+  }
+
+  .course-slide__wrapper {
+    width: 90%;
+    height: auto;
+    padding: 20px 20px 35px 20px;
+  }
+
+  .course-slide__title {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .swiper {
+    padding-top: 95px !important;
+  }
+
+  .course-programm__wrapper-pixel.pix2-1 {
+    top: -4%;
+  }
+
+  .course-programm__wrapper-pixel.pix1-1 {
+    top: 1%;
+  }
+
+  .course-programm__wrapper-pixel.pix6 {
+    display: none;
+  }
+
+  .course-programm__wrapper-pixel.pix1 {
+    display: none;
+  }
+
+  .swiper-button-prev {
+    left: 32%;
+    top: 84%;
+  }
+
+  .swiper-button-next {
+    right: 32%;
+    top: 84%;
+  }
+
+  .course-slide__block-img {
+    height: 68px;
+  }
+
+  .price__form {
+    padding: 46px 32px 47px 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .tabs-section__img {
+    top: -56px;
+    left: 17px;
+    width: 83%;
+  }
+
+  .tabs-section__img-wrapper {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 444px) {
+  .price__form-title {
+    font-size: 28px;
+  }
+
+  .price__form {
+    padding: 25px 17px 45px 17px;
+    border-radius: 28px;
+  }
+}
+
+@media (max-width: 430px) {
+  .questions {
+    padding: 72px 0 24px 0;
+  }
+
+  .questions__item-title-wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .questions__item-title {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .mobile-app__info-title {
+    font-size: 27px;
+    line-height: 41px;
+  }
+
+  .mobile-app__format-item {
+    width: 280px;
+  }
+}
+
+@media (max-width: 400px) {
+  .advantages__item {
+    margin-left: 0;
+    padding: 35px 22px;
+  }
+}
+
+@media (max-width: 392px) {
+  .swiper-button-next {
+    top: 90%;
+  }
+
+  .swiper-button-prev {
+    top: 90%;
+  }
+}
+
+@media (max-width: 350px) {
+  .course-slide__block-number {
+    padding: 12px 16px 12px 5px;
+  }
+
+  .course-slide__wrapper {
+    width: 100%;
+  }
 }

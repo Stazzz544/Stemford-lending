@@ -1,15 +1,20 @@
 .tech-of-future {
 	padding: 53px 0px 120px 0px;
 	background-color: #FFFFFF;
-	background-image: url('../img/sections/tehnology/grey-pixeles.svg');
-	background-repeat: no-repeat;
-	background-position: 54% -18%;
-	background-size: 28%;
+	// background-image: url('../img/sections/tehnology/grey-pixeles.svg');
+	// background-repeat: no-repeat;
+	// background-position: 54% -18%;
+	// background-size: 28%;
 	&__info-wrapper {
+		position: relative;
 		display: flex;
 		justify-content: space-between;
 	}
-
+	&__info-pixel.pix3-1{
+		position: absolute;
+		bottom: -48px;
+		right: 0px;
+	}
 	&__text-wrapper {
 	}
 
@@ -42,6 +47,9 @@
 		padding: 48px 58px 38px 59px;
 	}
 
+	&__tech-of-future__element{
+	}
+
 	&__img-text {
 		color: #FFFFFF;
 		font-size: 16px;
@@ -59,9 +67,11 @@
 		margin: 0 auto;
 		max-width: 1300px;
 		display: flex;
+		flex-wrap: wrap;
 		margin-top: 95px;
 		justify-content: space-between;
 	}
+
 
 	&__element {
 		display: flex;
@@ -93,11 +103,13 @@
 	&__companys-logos {
 		margin-top: 20px;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		text-align: center;
 	}
 
 	&__company-logo {
+		margin: 0 5px;
 		display: flex;
 		align-items: center;
 		&:nth-child(2){
@@ -149,4 +161,52 @@
 	}
 }
 
+@media(max-width: 1160px){
+	.tech-of-future__info-wrapper{
+		
+		flex-direction: column;
+	}
+	.tech-of-future__text {
+		max-width: none;
+  }
+  .tech-of-future__img-wrapper{
+	  margin: 0 auto;
+	  margin-top: 30px;
+  }
+  .tech-of-future__icons-wrapper{
+	  margin-top: 130px;
+	  padding-left: 70px;
+	  width: 700px;
+	  flex-direction: column;
+	  height: 115px;
+  }
+  .tech-of-future__companys-logos{
+	  justify-content: space-around;
+  }
+}
 
+@media(max-width: 768px){
+	.tech-of-future__icons-wrapper{
+		height: auto;
+		width: 305px;
+		padding: 0;
+		margin-top: 73px;
+	}
+	.tech-of-future__element{
+		margin-top: 35px;
+	}
+}
+
+@media(max-width: 630px){
+.tech-of-future__img-img{
+	left: -22px;
+	bottom: -175px;
+	}
+.tech-of-future__icons-wrapper{
+		margin-top: 147px;
+	}
+	.tech-of-future__img-wrapper{
+		max-height: 430px;
+		padding: 30px 30px 45px 25px;;
+	}
+}
