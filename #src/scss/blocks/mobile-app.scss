@@ -91,6 +91,7 @@
 		font-size    : 20px;
 		background   : linear-gradient(90deg, #715BCD 43.75%, #FF843F 100%);
 		border-radius: 12px;
+
 	}
 
 	&__info-img {}
@@ -100,9 +101,6 @@
 		width : 582px;
 		height: 506px;
 	}
-}
-
-.mobile-app {
 
 	&__format {
 		margin-top     : 97px;
@@ -177,6 +175,18 @@
 	}
 }
 
+
+
+
+		  @keyframes moveLightRight {
+80% {
+	transform: translateX(-4em) skewX(-45deg);
+}
+
+100% {
+	transform: translateX(18em) skewX(-45deg);
+}
+}
 
 
 @media(max-width: 1450px) {

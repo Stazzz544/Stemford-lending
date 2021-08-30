@@ -112,6 +112,8 @@
 		margin: 0 5px;
 		display: flex;
 		align-items: center;
+
+		
 		&:nth-child(2){
 			margin-top: 15px;
 		}
@@ -123,7 +125,13 @@
 	&__company-logo-img {
 		-webkit-filter: grayscale(100%);
 		filter: grayscale(100%);
-		transition: all 0.4s;
+		//transition: all 0.4s;
+		animation-timing-function: steps(5, end);
+		animation-duration: 10s;
+		animation-timing-function: steps(1, end);
+		animation-delay: 2s;
+		animation-iteration-count: infinite;
+
 		&:hover{
 			-webkit-filter: none;
 			filter: none;
@@ -131,35 +139,116 @@
 	}
 	&__company-logo-img.one {
 		height: 63px;
+		animation-name: companyOne;
 	}
 	&__company-logo-img.two {
 		height: 40px;
+		animation-name: companyTwo;
 	}
 	&__company-logo-img.three {
 		height: 43px;
+		animation-name:companythree;
 	}
 	&__company-logo-img.four {
 		height: 84px;
+		animation-name: companyfour;
 	}
 	&__company-logo-img.five {
 		height: 31px;
+		animation-name: companyfive;
 	}
 	&__company-logo-img.six {
 		height: 24px;
+		animation-name: companysix;
 	}
 	&__company-logo-img.seven {
 		height: 30px;
+		animation-name: companyseven;
 	}
 	&__company-logo-img.eight {
 		height: 45px;
+		animation-name: companyeight;
 	}
 	&__company-logo-img.nine {
 		height: 28px;
+		animation-name: companynine;
 	}
 	&__company-logo-img.ten {
 		height: 47px;
+		animation-name: companyten;
 	}
 }
+
+@keyframes companyOne {
+	0%   { filter: none; }
+	10%  { -webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+ }
+ @keyframes companyTwo {
+	10%   { filter: none; }
+	20%  { -webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+ }
+ @keyframes companythree {
+	20%   { filter: none; }
+	30%  { -webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+ }
+
+ @keyframes companyfour {
+	30%   { filter: none; }
+	40%  { -webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+ }
+
+ @keyframes companyfive {
+	40%   { filter: none; }
+	50%  { -webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+ }
+
+ @keyframes companysix {
+	50%   { filter: none; }
+	60%  { -webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+ }
+
+ @keyframes companyseven {
+	60%   { filter: none; }
+	70%  { -webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+ }
+
+ @keyframes companyeight {
+	70%   { filter: none; }
+	80%  { -webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+ }
+
+ @keyframes companynine {
+	80%   { filter: none; }
+	90%  { -webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+ }
+
+ @keyframes companyten {
+	90%   { filter: none; }
+	100%  { -webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+ }
+
+
+
 
 @media(max-width: 1160px){
 	.tech-of-future__info-wrapper{

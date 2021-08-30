@@ -14,7 +14,7 @@
 <body>
 
 	<header class="header">
-		<a href="#" class="header__logo">
+		<a href="https://stemford.org/" class="header__logo">
 			<img src="img/navigation/logo.svg" alt="logo" class="header__logo-img">
 		</a>
 		<div class="header__menu">
@@ -24,28 +24,70 @@
 			<nav class="header__navigation">
 				<ul class="navigation">
 					<li class="navigation__item">
-						<div class="navigation__submenu">
-							<a class="navigation__submenu-text" href="">Обучение</a>
+						<div class="navigation__submenu"  id='education'>
+							<span class="navigation__submenu-text">Обучение</span>
 							<img class="navigation__submenu-img" src="img/navigation/arrow-down.svg" alt="arrow">
 						</div>
+						<ul class="submenu" id='educationOpen'>
+							<li class="submenu__item">
+								<a href="https://stemford.org/education/courses" class="submenu__item-link">Курсы</a>
+							</li>
+							<li class="submenu__item">
+								<a href="https://stemford.org/education/webinars" class="submenu__item-link">Вебинары</a>
+							</li>
+							<li class="submenu__item">
+								<a href="https://stemford.org/education/videos" class="submenu__item-link">Видео</a>
+							</li>
+							<li class="submenu__item">
+								<a href="https://stemford.org/education/projects" class="submenu__item-link">Проекты</a>
+							</li>
+							<li class="submenu__item">
+								<a href="https://stemford.org/education/experiments" class="submenu__item-link">Экперименты</a>
+							</li>
+							<li class="submenu__item">
+								<a href="https://stemford.org/education/tracks" class="submenu__item-link">Треки</a>
+							</li>
+							<li class="submenu__item flex">
+								<a href="https://edunano.ru/nanotekhnologii/otkrytaya-kollektsiya/" class="submenu__item-link">Открытая коллекция</a>
+								<img class="submenu__item-img" src="img/navigation/arrow-out-of-box.svg" alt="arrow">
+							</li>
+							<li class="submenu__item flex">
+								<a href="http://allotrop.ru/" class="submenu__item-link">Аллотроп</a>
+								<img class="submenu__item-img" src="img/navigation/arrow-out-of-box.svg" alt="arrow">
+							</li>
+						</ul>
 					</li>
 					<li class="navigation__item">
-						<a class="navigation__item-link" href="#">Конкурсы</a>
+						<a class="navigation__item-link" href="https://stemford.org/contests">Конкурсы</a>
 					</li>
 					<li class="navigation__item">
-						<a class="navigation__item-link" href="#">Выбрать вуз</a>
+						<a class="navigation__item-link" href="https://stemford.org/university-search">Выбрать вуз</a>
 					</li>
 					<li class="navigation__item">
 						<div class="navigation__submenu">
-							<a class="navigation__item-link" href="">Стем Карьера</a>
+							<a class="navigation__item-link" href="https://career-stem.ru/">Стем Карьера</a>
 							<img class="navigation__submenu-img" src="img/navigation/arrow-out-of-box.svg" alt="arrow">
 						</div>
 					</li>
 					<li class="navigation__item">
-						<div class="navigation__submenu">
-							<a class="navigation__submenu-text" href="">Педагогу</a>
+						<div class="navigation__submenu" id='forTeacher'>
+							<span class="navigation__submenu-text">Педагогу</span>
 							<img class="navigation__submenu-img" src="img/navigation/arrow-down.svg" alt="arrow">
 						</div>
+						<ul class="submenu" id='forTeacherOpen'>
+							<li class="submenu__item">
+								<a href="https://stemford.org/education/teacher-courses" class="submenu__item-link">Курсы для педагогов</a>
+							</li>
+							<li class="submenu__item">
+								<a href="https://stemford.org/education/teacher-webinars" class="submenu__item-link">Вебинары для педагогов</a>
+							</li>
+							<li class="submenu__item">
+								<a href="https://stemford.org/education/training" class="submenu__item-link">Повышение квалификации</a>
+							</li>
+							<li class="submenu__item">
+								<a href="https://stemford.org/info/guidelines" class="submenu__item-link">Методические материалы</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</nav>
@@ -54,7 +96,7 @@
 			</div>
 			<div class="header__auth-reg-wrapper">
 				<div class="header__auth-reg">
-					<a class="header__auth-reg-link" href="#">Вход / Регистрация</a>
+					<a class="header__auth-reg-link" href="https://stemford.org/auth/login">Вход / Регистрация</a>
 				</div>
 			</div>
 		</div>
@@ -80,7 +122,7 @@
 							основами программирования на языке Dart в среде разработки Flutter и создадут собственное мобильное
 							приложение или игру.
 						</div>
-						<button class="mobile-app__info-get-course">Записаться на курс</button>
+						<button class="mobile-app__info-get-course reflect-btn">Записаться в кружок</button>
 					</div>
 				</div>
 				<div class="mobile-app__info-img">
@@ -144,9 +186,9 @@
 					</p>
 				</div>
 				<div class="tech-of-future__img-wrapper">
-					<div class="tech-of-future__img-text">
+					<div class="tech-of-future__img-text  wow animate__animated animate__fadeIn " data-wow-delay="1s">
 						По оценке аналитиков рынка IT, на горизонте 3 лет на Flutter перейдет до трети среднего и крупного
-						бизнеса. Что сделает Flutter самым популярным инструментом для создания мобильных приложений.
+						бизнеса. Что сделает его самым популярным инструментом для создания мобильных приложений.
 					</div>
 					<img src="img/sections/tehnology/list.png" alt="list" class="tech-of-future__img-img">
 				</div>
@@ -154,24 +196,24 @@
 			<div class="tech-of-future__icons-wrapper">
 
 
-					<div class="tech-of-future__element el1">
-						<img src="img/sections/tehnology/icon/phone.svg" alt="phone">
-						<p class="tech-of-future__element-text">Приложения для Android и iOS</p>
-					</div>
-					<div class="tech-of-future__element el2">
-						<img src="img/sections/tehnology/icon/pc.svg" alt="pc">
-						<p class="tech-of-future__element-text">Сайты для Windows, Linux и MacOS</p>
-					</div>
+				<div class="tech-of-future__element el1">
+					<img src="img/sections/tehnology/icon/phone.svg" alt="phone">
+					<p class="tech-of-future__element-text">Приложения для Android и iOS</p>
+				</div>
+				<div class="tech-of-future__element el2">
+					<img src="img/sections/tehnology/icon/pc.svg" alt="pc">
+					<p class="tech-of-future__element-text">Сайты для Windows, Linux и MacOS</p>
+				</div>
 
 
-					<div class="tech-of-future__element el3">
-						<img src="img/sections/tehnology/icon/loptop.svg" alt="loptop">
-						<p class="tech-of-future__element-text">Web-приложения</p>
-					</div>
-					<div class="tech-of-future__element el4">
-						<img src="img/sections/tehnology/icon/gameboy.svg" alt="gameboy">
-						<p class="tech-of-future__element-text">Мобильные игры</p>
-					</div>
+				<div class="tech-of-future__element el3">
+					<img src="img/sections/tehnology/icon/loptop.svg" alt="loptop">
+					<p class="tech-of-future__element-text">Web-приложения</p>
+				</div>
+				<div class="tech-of-future__element el4">
+					<img src="img/sections/tehnology/icon/gameboy.svg" alt="gameboy">
+					<p class="tech-of-future__element-text">Мобильные игры</p>
+				</div>
 
 
 			</div>
@@ -226,503 +268,530 @@
 
 	<section class="advantages">
 
-			<div class="advantages__items-wrapper">
+		<div class="advantages__items-wrapper">
 
-				<div class="advantages__item">
-					<img class="advantages__item-pixel pix4" src="img/pixels/4.png" alt="pix4">
-					<img class="advantages__item-side-img-left" src="img/sections/advantages/meditation.png"
-						alt="meditation">
-					<h2 class="advantages__item-title">Перспективы<br> Flutter-разработчика
-					</h2>
-					<div class="advantages__item-orange-divider orange-divider"></div>
-					<div class="advantages__item-text">
-						Уже сейчас многие современные компании стремятся заменить нескольких узконаправленных программистов
-						одним
-						Flutter-разработчиком.
-					</div>
-					<ul class="advantages__item-list">
-						<li class="advantages__item-list-item">
-							Развивающееся направление
-						</li>
-						<li class="advantages__item-list-item">
-							Востребованная профессия
-						</li>
-						<li class="advantages__item-list-item">
-							Высокая заработная плата
-						</li>
-					</ul>
+			<div class="advantages__item wow animate__animated animate__fadeInLeftBig " data-wow-offset="400">
+				<img class="advantages__item-pixel pix4" src="img/pixels/4.png" alt="pix4">
+				<img class="advantages__item-side-img-left" src="img/sections/advantages/meditation.png" alt="meditation">
+				<h2 class="advantages__item-title">Перспективы<br> Flutter-разработчика
+				</h2>
+				<div class="advantages__item-orange-divider orange-divider"></div>
+				<div class="advantages__item-text">
+					Уже сейчас многие современные компании стремятся заменить нескольких узконаправленных программистов
+					одним
+					Flutter-разработчиком.
 				</div>
-
-				<div class="advantages__item">
-					<img class="advantages__item-pixel pix5" src="img/pixels/5.png" alt="pix5">
-					<img class="advantages__item-side-img-right" src="img/sections/advantages/runner.png" alt="runner">
-					<h2 class="advantages__item-title">
-						Преимущества<br> обучения на курсе
-					</h2>
-					<div class="advantages__item-orange-divider orange-divider"></div>
-					<div class="advantages__item-text">
-						Наш курс дает возможность посмотреть на свой мобильный телефон глазами программиста и осуществить
-						тест-драйв перспективной профессии.
-					</div>
-					<ul class="advantages__item-list">
-						<li class="advantages__item-list-item">
-							Более 100 практических заданий
-						</li>
-						<li class="advantages__item-list-item">
-							Навык самостоятельного построения логики и интерфейса программ
-						</li>
-						<li class="advantages__item-list-item">
-							Основы Material Design и визуального
-						</li>
-						<li class="advantages__item-list-item">
-							Навык управления собственным проектом и работы на результат
-						</li>
-						<li class="advantages__item-list-item">
-							Сертификат о прохождении курса
-						</li>
-					</ul>
-				</div>
+				<ul class="advantages__item-list">
+					<li class="advantages__item-list-item">
+						Развивающееся направление
+					</li>
+					<li class="advantages__item-list-item">
+						Востребованная профессия
+					</li>
+					<li class="advantages__item-list-item">
+						Высокая заработная плата
+					</li>
+				</ul>
 			</div>
-		</section>
+
+			<div class="advantages__item wow animate__animated animate__fadeInRightBig" data-wow-offset="400">
+				<img class="advantages__item-pixel pix5" src="img/pixels/5.png" alt="pix5">
+				<img class="advantages__item-side-img-right" src="img/sections/advantages/runner.png" alt="runner">
+				<h2 class="advantages__item-title">
+					Преимущества<br> занятий в кружке
+				</h2>
+				<div class="advantages__item-orange-divider orange-divider"></div>
+				<div class="advantages__item-text">
+					Практический курс позволит ученику
+					создать собственный мобильный проект и
+					осуществить тест-драйв перспективной
+					профессии.
+				</div>
+				<ul class="advantages__item-list">
+					<li class="advantages__item-list-item">
+						Более 100 практических заданий
+					</li>
+					<li class="advantages__item-list-item">
+						Навык самостоятельного построения логики и интерфейса программ
+					</li>
+					<li class="advantages__item-list-item">
+						Основы Material Design и визуального
+						оформления приложений
+					</li>
+					<li class="advantages__item-list-item">
+						Навык управления собственным проектом и работы на результат
+					</li>
+					<li class="advantages__item-list-item">
+						Сертификат о прохождении
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
 
 	<section class="video-block">
-			<div class="container">
-				<div class="video-block__wrapper">
-					<img class="video-block__wrapper-pixel pix3-1" src="img/pixels/3-1.png" alt="pix3-1">
-					<div class="video-block__youtube-wrapper">
-						<iframe class='video'  src="https://www.youtube.com/embed/C4MpzSMkinw?controls=0"
-							title="YouTube video player" 
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</div>
-					<div class="video-block__text-wrapper">
-						<h2 class="video-block__title">Кирилл Непомилуев</h2>
-						<h3 class="video-block__subtitle">Разработчик курса, преподаватель-практик</h3>
-						<p class="video-block__text">IT-предприниматель. Более 8 лет занимается разработкой мобильных
-							приложений
-							под коммерческие проекты. 2 года создает приложения на Flutter. В 2019 году с личной командой
-							Flutter-разработчиков занял 2 место на IT-конкурсе «Цифровой прорыв», который вошел в «Книгу
-							рекордов
-							Гиннесса» (как самый крупный хакатон в мире).</p>
-						<p class="video-block__text">Имеет большой опыт работы с детьми в возрасте от 9 до 16 лет и
-							преподавания
-							основ программирования и создания алгоритмов. В прошлом году провел первый в мире online-марафон по
-							обучению Flutter.</p>
-					</div>
+		<div class="container">
+			<div class="video-block__wrapper">
+				<img class="video-block__wrapper-pixel pix3-1" src="img/pixels/3-1.png" alt="pix3-1">
+				<div class="video-block__youtube-wrapper">
+					<iframe class='video' src="https://www.youtube.com/embed/C4MpzSMkinw?controls=0"
+						title="YouTube video player"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
 				</div>
-
+				<div class="video-block__text-wrapper">
+					<h2 class="video-block__title">Кирилл Непомилуев</h2>
+					<h3 class="video-block__subtitle">Разработчик кружка, преподаватель-практик</h3>
+					<p class="video-block__text">IT-предприниматель. Более 8 лет занимается разработкой мобильных
+						приложений
+						под коммерческие проекты. 2 года создает приложения на Flutter. В 2019 году с личной командой
+						Flutter-разработчиков занял 2 место на IT-конкурсе «Цифровой прорыв», который вошел в «Книгу
+						рекордов
+						Гиннесса» (как самый крупный хакатон в мире).</p>
+					<p class="video-block__text">Имеет большой опыт работы с детьми в возрасте от 9 до 16 лет и
+						преподавания
+						основ программирования и создания алгоритмов. В прошлом году провел первый в мире online-марафон по
+						обучению Flutter.</p>
+				</div>
 			</div>
-		</section>
+
+		</div>
+	</section>
 
 	<section class="study-process">
-			<div class="container">
-				<div class="study-process__wrapper">
-					<img class="study-process__wrapper-pixel pix1" src="img/pixels/1.png" alt="pix1">
-					<img class="study-process__wrapper-pixel pix2-1" src="img/pixels/2-1.png" alt="pix2-1">
-					<div class="study-process__wrapper-text">
-						<h2 class="study-process__title">Процесс обучения</h2>
-						<p class="study-process__text">Наша программа обучения построена на адаптивном подходе, который
-							учитывает
-							возраст, психологические особенности детей и современный ритм их жизни. </p>
-						<p class="study-process__text">Мы специально ушли от объемных часовых лекций, чтобы ученикам было
-							комфортно и интересно изучать материал. А online-формат занятий позволяет им получать доступ к
-							материалам и выполнять практические задания в любом месте и в любое время.</p>
+		<div class="container">
+			<div class="study-process__wrapper">
+				<img class="study-process__wrapper-pixel pix1" src="img/pixels/1.png" alt="pix1">
+				<img class="study-process__wrapper-pixel pix2-1" src="img/pixels/2-1.png" alt="pix2-1">
+				<div class="study-process__wrapper-text">
+					<h2 class="study-process__title">Процесс обучения</h2>
+					<p class="study-process__text">Программа наших занятий построена на адаптивном подходе, который
+						учитывает
+						возраст, психологические особенности детей и современный ритм их жизни. </p>
+					<p class="study-process__text">Мы специально ушли от объемных часовых лекций, чтобы ученикам было
+						комфортно и интересно изучать материал. А online-формат занятий позволяет им получать доступ к
+						материалам и выполнять практические задания в любом месте и в любое время.</p>
+				</div>
+				<div class="study-process__boxes">
+					<div class="study-process__box study-process__box-1 wow animate__animated animate__fadeIn "
+						data-wow-delay="1s">
+						<div class="study-process__box-title">Теория</div>
+						<img class="study-process__box-img one" src="img/sections/study-process/39.png" alt="39">
+						<div class="study-process__box-subtitle">лекций</div>
 					</div>
-					<div class="study-process__boxes">
-						<div class="study-process__box study-process__box-1">
-							<div class="study-process__box-title">Теория</div>
-							<img class="study-process__box-img one" src="img/sections/study-process/39.png" alt="39">
-							<div class="study-process__box-subtitle">лекций</div>
-						</div>
-						<div class="study-process__box study-process__box-2">
-							<div class="study-process__box-title">Длительность лекции</div>
-							<img class="study-process__box-img two" src="img/sections/study-process/20.png" alt="20">
-							<img class="study-process__box-img-extra two" src="img/sections/study-process/figure-2.png"
-								alt="figure">
-							<div class="study-process__box-subtitle">минут</div>
-						</div>
-						<div class="study-process__box study-process__box-3">
-							<div class="study-process__box-title">Практика</div>
-							<img class="study-process__box-img three" src="img/sections/study-process/108.png" alt="108">
-							<img class="study-process__box-img-extra three" src="img/sections/study-process/figure-1.png"
-								alt="figure">
-							<div class="study-process__box-subtitle">заданий</div>
-						</div>
-						<div class="study-process__box study-process__box-4">
-							<div class="study-process__box-title">Период обучения</div>
-							<img class="study-process__box-img four" src="img/sections/study-process/3.png" alt="3">
-							<div class="study-process__box-subtitle">месяца</div>
-						</div>
+					<div class="study-process__box study-process__box-2 wow animate__animated animate__fadeIn "
+						data-wow-delay="1.5s">
+						<div class="study-process__box-title">Длительность лекции</div>
+						<img class="study-process__box-img two" src="img/sections/study-process/20.png" alt="20">
+						<img class="study-process__box-img-extra two" src="img/sections/study-process/figure-2.png"
+							alt="figure">
+						<div class="study-process__box-subtitle">минут</div>
+					</div>
+					<div class="study-process__box study-process__box-3 wow animate__animated animate__fadeIn "
+						data-wow-delay="2s">
+						<div class="study-process__box-title">Практика</div>
+						<img class="study-process__box-img three" src="img/sections/study-process/108.png" alt="108">
+						<img class="study-process__box-img-extra three" src="img/sections/study-process/figure-1.png"
+							alt="figure">
+						<div class="study-process__box-subtitle">заданий</div>
+					</div>
+					<div class="study-process__box study-process__box-4 wow animate__animated animate__fadeIn "
+						data-wow-delay="2.5s">
+						<div class="study-process__box-title">Период обучения</div>
+						<img class="study-process__box-img four" src="img/sections/study-process/3.png" alt="3">
+						<div class="study-process__box-subtitle">месяца</div>
 					</div>
 				</div>
-
 			</div>
-		</section>
+
+		</div>
+	</section>
 
 	<section class="tabs-section">
-			<div class="container">
-				<div class="tabs-section__tab-nav-wrapper">
+		<div class="container">
+			<div class="tabs-section__tab-nav-wrapper">
 
-					<div class="tabs-section__tab-nav-item active">
-						<img class="tabs-section__tab-nav-item-img active" src="img/sections/tabs-section/1.svg"
-							alt="nav-icon">
-						<div class="tabs-section__tab-nav-item-text active">Теория</div>
-					</div>
-					<div class="tabs-section__tab-nav-item">
-						<img class="tabs-section__tab-nav-item-img" src="img/sections/tabs-section/2.svg" alt="nav-icon">
-						<div class="tabs-section__tab-nav-item-text">Практика</div>
-					</div>
-					<div class="tabs-section__tab-nav-item">
-						<img class="tabs-section__tab-nav-item-img" src="img/sections/tabs-section/3.svg" alt="nav-icon">
-						<div class="tabs-section__tab-nav-item-text">Поддержка</div>
-					</div>
-					<div class="tabs-section__tab-nav-item">
-						<img class="tabs-section__tab-nav-item-img" src="img/sections/tabs-section/4.svg" alt="nav-icon">
-						<div class="tabs-section__tab-nav-item-text">Сертификат</div>
-					</div>
+				<div class="tabs-section__tab-nav-item active">
+					<img class="tabs-section__tab-nav-item-img active" src="img/sections/tabs-section/1.svg" alt="nav-icon">
+					<div class="tabs-section__tab-nav-item-text active">Теория</div>
 				</div>
-				
-				<div class="tabs-section__content active">
-					<div class="tabs-section__img-wrapper">
-						<img class="tabs-section__img" src="img/sections/tabs-section/pc.png" alt="pc" >
-					</div>
-					<div class="tabs-section__text-wrapper">
-						<span class="tabs-section__theme">Теория</span>
-						<h2 class="tabs-section__title">Лекции в видеоформате</h2>
-						<p class="tabs-section__text">Преподаватель объясняет теорию и демонстрирует её на примерах в формате
-							лайв-кодинга.
-						</p>
-						<p class="tabs-section__text">После каждого урока ученику открывается доступк практическому заданию
-							для закрепления полученного материала.</p>
-					</div>
+				<div class="tabs-section__tab-nav-item">
+					<img class="tabs-section__tab-nav-item-img" src="img/sections/tabs-section/2.svg" alt="nav-icon">
+					<div class="tabs-section__tab-nav-item-text">Практика</div>
 				</div>
-				<div class="tabs-section__content">
-					<div class="tabs-section__img-wrapper">
-						<img class="tabs-section__img" src="img/sections/tabs-section/pc.png" alt="pc" >
-					</div>
-					<div class="tabs-section__text-wrapper">
-						<span class="tabs-section__theme special-bg-color">практика</span>
-						<h2 class="tabs-section__title">Практические задания</h2>
-						<p class="tabs-section__text">Выполняя домашние задания, ребенок создает собственный проект, в котором
-							проектирует сюжет, программирует логику и интерфейс приложения, а также разрабатывает его
-							визуальное оформление.
-						</p>
-					</div>
+				<div class="tabs-section__tab-nav-item">
+					<img class="tabs-section__tab-nav-item-img" src="img/sections/tabs-section/3.svg" alt="nav-icon">
+					<div class="tabs-section__tab-nav-item-text">Поддержка</div>
 				</div>
-				<div class="tabs-section__content">
-					<div class="tabs-section__img-wrapper">
-						<img class="tabs-section__img" src="img/sections/tabs-section/pc.png" alt="pc" >
-					</div>
-					<div class="tabs-section__text-wrapper">
-						<span class="tabs-section__theme">Поддержка</span>
-						<h2 class="tabs-section__title">Чат с преподавателем и другими учениками</h2>
-						<p class="tabs-section__text">Преподаватель дает информацию сверх программы, отвечает на вопросы,
-							разбирает код в режиме online и дает подробную обратную связь по домашнему заданию.
-						</p>
-						<ul class="tabs-section__text">
-							<li class="tabs-section__text-list-item">Живое общение с преподавателем</li>
-							<li class="tabs-section__text-list-item">Новые друзья по интересам</li>
-							<li class="tabs-section__text-list-item">Хобби, которое развивает</li>
-						</ul>
-					</div>
-				</div>
-				<div class="tabs-section__content">
-					<div class="tabs-section__img-wrapper">
-						<img class="tabs-section__img" src="img/sections/tabs-section/pc.png" alt="pc" >
-					</div>
-					<div class="tabs-section__text-wrapper">
-						<span class="tabs-section__theme special-bg-color">сертификат</span>
-						<h2 class="tabs-section__title">Сертификат об окончании курса
-						</h2>
-						<p class="tabs-section__text">Мы проводим обучение на основании Государственной лицензии No 038412. По
-							окончании курса выпускники получат электронный сертификат, который подтвердит приобретенные ими
-							навыки и знания, а также поможет сделать первый шаг к востребованной профессии.
-						</p>
-					</div>
+				<div class="tabs-section__tab-nav-item">
+					<img class="tabs-section__tab-nav-item-img" src="img/sections/tabs-section/4.svg" alt="nav-icon">
+					<div class="tabs-section__tab-nav-item-text">Сертификат</div>
 				</div>
 			</div>
-		</section>
+
+			<div class="tabs-section__content active">
+				<div class="tabs-section__img-wrapper">
+					<img class="tabs-section__img" src="img/sections/tabs-section/pc.png" alt="pc">
+				</div>
+				<div class="tabs-section__text-wrapper">
+					<span class="tabs-section__theme">Теория</span>
+					<h2 class="tabs-section__title">Лекции в видеоформате</h2>
+					<p class="tabs-section__text">Преподаватель объясняет теорию и демонстрирует её в формате лайв-кодинга на
+						знакомых примерах, в том числе из любимых компьютерных игр
+					</p>
+					<p class="tabs-section__text">После каждой лекции ученику открывается доступ к практическому заданию
+						для закрепления полученного материала.</p>
+				</div>
+			</div>
+			<div class="tabs-section__content">
+				<div class="tabs-section__img-wrapper">
+					<img class="tabs-section__img" src="img/sections/tabs-section/pc.png" alt="pc">
+				</div>
+				<div class="tabs-section__text-wrapper">
+					<span class="tabs-section__theme special-bg-color">практика</span>
+					<h2 class="tabs-section__title">Практические задания</h2>
+					<p class="tabs-section__text">Выполняя практические задания, ученик создает собственное мобильное
+						приложение или игру. Он
+						проектирует сюжет, программирует логику и интерфейс приложения, а также разрабатывает его
+						визуальное оформление.
+					</p>
+				</div>
+			</div>
+			<div class="tabs-section__content">
+				<div class="tabs-section__img-wrapper">
+					<img class="tabs-section__img" src="img/sections/tabs-section/pc.png" alt="pc">
+				</div>
+				<div class="tabs-section__text-wrapper">
+					<span class="tabs-section__theme">Поддержка</span>
+					<h2 class="tabs-section__title">Чат с преподавателем и другими учениками</h2>
+					<p class="tabs-section__text">Преподаватель делится
+						дополнительными секретами работы в Flutter, отвечает на вопросы, и дает подробную обратную связь по
+						выполнению практических заданий.
+					</p>
+					<ul class="tabs-section__text">
+						<li class="tabs-section__text-list-item">Живое общение с преподавателем</li>
+						<li class="tabs-section__text-list-item">Новые друзья по интересам</li>
+						<li class="tabs-section__text-list-item">Хобби, которое развивает</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tabs-section__content">
+				<div class="tabs-section__img-wrapper">
+					<img class="tabs-section__img" src="img/sections/tabs-section/pc.png" alt="pc">
+				</div>
+				<div class="tabs-section__text-wrapper">
+					<span class="tabs-section__theme special-bg-color">сертификат</span>
+					<h2 class="tabs-section__title">Сертификат о прохождении
+					</h2>
+					<p class="tabs-section__text">По окончании обучения выпускники кружка получат электронный сертификат, который
+						подтвердит приобретенные ими
+						навыки и знания. А также поможет сделать первый шаг к востребованной профессии.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<section class="course-programm">
-			<div class="container">
-				<h2 class="course-programm__title">Программа курса</h2>
-				<h3 class="course-programm__subtitle">3 месяца обучения</h3>
-				<div class="course-programm__wrapper">
+		<div class="container">
+			<h2 class="course-programm__title">Программа кружка</h2>
+			<h3 class="course-programm__subtitle">3 месяца обучения</h3>
+			<div class="course-programm__wrapper">
 				<img class="course-programm__wrapper-pixel pix1" src="img/pixels/1.png" alt="pix1">
 				<img class="course-programm__wrapper-pixel pix1-1" src="img/pixels/1-1.png" alt="pix1-1">
 				<img class="course-programm__wrapper-pixel pix6" src="img/pixels/6.png" alt="pix6">
 				<img class="course-programm__wrapper-pixel pix2-1" src="img/pixels/2-1.png" alt="pix2-1">
 
-					<div class="swiper">
-					
-						<div class="swiper-wrapper">
-					
-							<div class="course-slide swiper-slide">
-								<div class="course-slide__wrapper">
-									<div class="course-slide__block-number-wrapper">
-										<div class="course-slide__block-number">1 Блок</div>
-										<img class="course-slide__block-img" src="img/sections/course-programm/slide1.png"
-											alt="slide1">
-									</div>
-									<h2 class="course-slide__title">Основы процедурного программирования</h2>
-									<h3 class="course-slide__subtitle">9 уроков | 29 практических заданий</h3>
-									<div class="course-slide__theme">Основы синтаксиса Dart. Часть 1:</div>
-									<div class="course-slide__text-item">1. Типы данных и действия с ними</div>
-									<div class="course-slide__text-item">2. Понятие алгоритмов и их виды </div>
-									<div class="course-slide__text-item">3. Условные конструкции</div>
-									<div class="course-slide__text-item">4. Коллекции</div>
-									<div class="course-slide__text-item">5. Циклы</div>
-									<div class="course-slide__text-item">6. Функции</div>
-								</div>
-							</div>
-							<div class="course-slide swiper-slide">
-								<div class="course-slide__wrapper">
-									<div class="course-slide__block-number-wrapper">
-										<div class="course-slide__block-number">2 Блок</div>
-										<img class="course-slide__block-img" src="img/sections/course-programm/slide2.png"
-											alt="slide1">
-									</div>
-									<h2 class="course-slide__title">Объектно-ориентированная природа Dart</h2>
-									<h3 class="course-slide__subtitle">10 уроков | 26 практических заданий</h3>
-									<div class="course-slide__theme">Основы синтаксиса Dart. Часть 2:</div>
-									<div class="course-slide__text-item">1. Классы и объекты</div>
-									<div class="course-slide__text-item">2. Свойства </div>
-									<div class="course-slide__text-item">3. Методы</div>
-									<div class="course-slide__text-item">4. Конструкторы классов</div>
-									<div class="course-slide__text-item">5. Наследование</div>
-									<div class="course-slide__text-item">6. Абстрактные классы</div>
-								</div>
-							</div>
-							<div class="course-slide swiper-slide">
-								<div class="course-slide__wrapper">
-									<div class="course-slide__block-number-wrapper">
-										<div class="course-slide__block-number">3 Блок</div>
-										<img class="course-slide__block-img" src="img/sections/course-programm/slide3.png"
-											alt="slide1">
-									</div>
-									<h2 class="course-slide__title">Знакомство с Flutter. Часть 1</h2>
-									<h3 class="course-slide__subtitle">10 уроков | 30 практических заданий</h3>
-									<div class="course-slide__theme">StatelessWidget и работа с ним:</div>
-									<div class="course-slide__text-item">1. Хранилище StatelessWidget</div>
-									<div class="course-slide__text-item">2. Высокоуровневые виджеты MaterialApp и Scaffold </div>
-									<div class="course-slide__text-item">3. Контейнер и действия с ним </div>
-									<div class="course-slide__text-item">4. Расположение виджетов: Row, Column, Stack</div>
-									<div class="course-slide__text-item">5. Создание отступов: Padding, Align, SizedBox</div>
-									<div class="course-slide__text-item">Добавление изображений и иконок </div>
-								</div>
-							</div>
-							<div class="course-slide swiper-slide">
-								<div class="course-slide__wrapper">
-									<div class="course-slide__block-number-wrapper">
-										<div class="course-slide__block-number">4 Блок</div>
-										<img class="course-slide__block-img" src="img/sections/course-programm/slide4.png"
-											alt="slide1">
-									</div>
-									<h2 class="course-slide__title">Знакомство с Flutter. Часть 2</h2>
-									<h3 class="course-slide__subtitle">10 уроков | 23 практических задания</h3>
-									<div class="course-slide__theme">StatelessWidget и работа с ним: </div>
-									<div class="course-slide__text-item">1. Работа с StatefulWidget </div>
-									<div class="course-slide__text-item">2. Создание кнопок </div>
-									<div class="course-slide__text-item">3. Создание полей для заполнения</div>
-									<div class="course-slide__text-item">4. Создание форм</div>
-									<div class="course-slide__text-item">5. Навигация по приложению</div>
-									<div class="course-slide__text-item">6. Сохранение настроек приложения</div>
-									<div class="course-slide__text-item">7. Анимации в Flutter</div>
-								</div>
-							</div>
+				<div class="swiper">
 
+					<div class="swiper-wrapper">
+
+						<div class="course-slide swiper-slide">
+							<div class="course-slide__wrapper">
+								<div class="course-slide__block-number-wrapper">
+									<div class="course-slide__block-number">1 Блок</div>
+									<img class="course-slide__block-img" src="img/sections/course-programm/slide1.png"
+										alt="slide1">
+								</div>
+								<h2 class="course-slide__title">Основы процедурного программирования</h2>
+								<h3 class="course-slide__subtitle">9 уроков | 29 практических заданий</h3>
+								<div class="course-slide__theme">Основы синтаксиса Dart. Часть 1:</div>
+								<div class="course-slide__text-item">1. Типы данных и действия с ними</div>
+								<div class="course-slide__text-item">2. Понятие алгоритмов и их виды </div>
+								<div class="course-slide__text-item">3. Условные конструкции</div>
+								<div class="course-slide__text-item">4. Коллекции</div>
+								<div class="course-slide__text-item">5. Циклы</div>
+								<div class="course-slide__text-item">6. Функции</div>
+							</div>
 						</div>
-					
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
+						<div class="course-slide swiper-slide">
+							<div class="course-slide__wrapper">
+								<div class="course-slide__block-number-wrapper">
+									<div class="course-slide__block-number">2 Блок</div>
+									<img class="course-slide__block-img" src="img/sections/course-programm/slide2.png"
+										alt="slide1">
+								</div>
+								<h2 class="course-slide__title">Объектно-ориентированная природа Dart</h2>
+								<h3 class="course-slide__subtitle">10 уроков | 26 практических заданий</h3>
+								<div class="course-slide__theme">Основы синтаксиса Dart. Часть 2:</div>
+								<div class="course-slide__text-item">1. Классы и объекты</div>
+								<div class="course-slide__text-item">2. Свойства </div>
+								<div class="course-slide__text-item">3. Методы</div>
+								<div class="course-slide__text-item">4. Конструкторы классов</div>
+								<div class="course-slide__text-item">5. Наследование</div>
+								<div class="course-slide__text-item">6. Абстрактные классы</div>
+							</div>
+						</div>
+						<div class="course-slide swiper-slide">
+							<div class="course-slide__wrapper">
+								<div class="course-slide__block-number-wrapper">
+									<div class="course-slide__block-number">3 Блок</div>
+									<img class="course-slide__block-img" src="img/sections/course-programm/slide3.png"
+										alt="slide1">
+								</div>
+								<h2 class="course-slide__title">Знакомство с Flutter. Часть 1</h2>
+								<h3 class="course-slide__subtitle">10 уроков | 30 практических заданий</h3>
+								<div class="course-slide__theme">StatelessWidget и работа с ним:</div>
+								<div class="course-slide__text-item">1. Хранилище StatelessWidget</div>
+								<div class="course-slide__text-item">2. Высокоуровневые виджеты MaterialApp и Scaffold </div>
+								<div class="course-slide__text-item">3. Контейнер и действия с ним </div>
+								<div class="course-slide__text-item">4. Расположение виджетов: Row, Column, Stack</div>
+								<div class="course-slide__text-item">5. Создание отступов: Padding, Align, SizedBox</div>
+								<div class="course-slide__text-item">Добавление изображений и иконок </div>
+							</div>
+						</div>
+						<div class="course-slide swiper-slide">
+							<div class="course-slide__wrapper">
+								<div class="course-slide__block-number-wrapper">
+									<div class="course-slide__block-number">4 Блок</div>
+									<img class="course-slide__block-img" src="img/sections/course-programm/slide4.png"
+										alt="slide1">
+								</div>
+								<h2 class="course-slide__title">Знакомство с Flutter. Часть 2</h2>
+								<h3 class="course-slide__subtitle">10 уроков | 23 практических задания</h3>
+								<div class="course-slide__theme">StatelessWidget и работа с ним: </div>
+								<div class="course-slide__text-item">1. Работа с StatefulWidget </div>
+								<div class="course-slide__text-item">2. Создание кнопок </div>
+								<div class="course-slide__text-item">3. Создание полей для заполнения</div>
+								<div class="course-slide__text-item">4. Создание форм</div>
+								<div class="course-slide__text-item">5. Навигация по приложению</div>
+								<div class="course-slide__text-item">6. Сохранение настроек приложения</div>
+								<div class="course-slide__text-item">7. Анимации в Flutter</div>
+							</div>
+						</div>
+
 					</div>
+
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
 	<section class="price">
-			<div class="container">
-				<div class="price__wrapper">
-					<div class="price__text-wrapper">
-						<div class="price__title">Стоимость обучения</div>
-						<div class="price__main-price">12 000 ₽</div>
-						<div class="price__part-of-price">или <span>4 000 ₽/мес</span>
-						</div>
-						<div class="price__star-info">*подробности у менеджера</div>
-						<ul class="price__info">
-							<li class="price__info-item">Начало занятий: <span>12 августа</span></li>
-							<li class="price__info-item">Продолжительность: <span>3 месяца</span> </li>
-							<li class="price__info-item">Обучение: <span>на практике</span></li>
-							<li class="price__info-item">Формат: <span>online</span></li>
-							<li class="price__info-item">Осталось: <span>5 мест</span></li>
-						</ul>
-						<div class="price__more-info">Посмотреть программу</div>
+		<div class="container">
+			<div class="price__wrapper">
+				<div class="price__text-wrapper">
+					<div class="price__title">Стоимость обучения</div>
+					<div class="price__main-price">12 000 ₽</div>
+					<div class="price__part-of-price">или <span>4 000 ₽/мес</span>
 					</div>
-					<form class="price__form" action="#" method="post">
-						<h2 class="price__form-title">Оставьте заявку</h2>
-						<div class="price__form-text">Наш менеджер свяжется с вами, чтобы ответить на все вопросы и
-							забронировать место в группе</div>
-						<input type="text" class="price__form-input" placeholder="Ваше имя">
-						<input type="email" class="price__form-input" placeholder="E-mail">
-						<input type="number" class="price__form-input" placeholder="Телефон">
-						<button class="price__form-btn">Оставить заявку</button>
-						<div class="price__form-personal-data">Отправляя заявку, вы даёте согласие на обработку своих
-							персональных данных в соответствии с политикой конфиденциальности</div>
-					</form>
+					<div class="price__star-info">*подробности у менеджера</div>
+					<ul class="price__info">
+						<li class="price__info-item">Начало занятий: <span>12 августа</span></li>
+						<li class="price__info-item">Продолжительность: <span>3 месяца</span> </li>
+						<li class="price__info-item">Обучение: <span>на практике</span></li>
+						<li class="price__info-item">Формат: <span>online</span></li>
+						<li class="price__info-item">Осталось: <span>5 мест</span></li>
+					</ul>
+					<div class="price__more-info">Посмотреть программу</div>
 				</div>
+				<form class="price__form" action="#" method="post">
+					<h2 class="price__form-title">Оставьте заявку</h2>
+					<div class="price__form-text">Наш менеджер свяжется с вами, чтобы ответить на все вопросы и
+						забронировать место в группе</div>
+					<input type="text" class="price__form-input" placeholder="Ваше имя">
+					<input type="email" class="price__form-input" placeholder="E-mail">
+					<input type="number" class="price__form-input" placeholder="Телефон">
+					<button class="price__form-btn reflect-btn">Оставить заявку</button>
+					<div class="price__form-personal-data">Отправляя заявку, вы даёте согласие на обработку своих
+						персональных данных в соответствии с политикой конфиденциальности</div>
+				</form>
 			</div>
-		</section>
+		</div>
+	</section>
 
 	<section class="questions">
-			<div class="container questions__container">
-				<h2 class="questions__title">Часто задаваемые вопросы</h2>
+		<div class="container questions__container">
+			<h2 class="questions__title">Часто задаваемые вопросы</h2>
 
 
-				<div class="questions__item-wrapper">
+			<div class="questions__item-wrapper">
 
-					<div class="questions__item-title-wrapper">
-						<h2 class="questions__item-title">
-							Кому подойдет этот курс?
-						</h2>
-						<div class="questions__item-title-btn"></div>
-					</div>
-					<div class="questions__item-text">
-						Наш курс предназначен для тех, кто хочет научиться программировать, интересуется мобильными
-						приложениями и хочет сделать первые шаги в IT. Преподаватель подробно объяснит основы программирования
-						на языке Dart и сопроводит ученика до получения им результата — разработки собственного приложения или
-						игры.
-					</div>
+				<div class="questions__item-title-wrapper">
+					<h2 class="questions__item-title">
+						Кому подойдет этот кружок?
+					</h2>
+					<div class="questions__item-title-btn"></div>
 				</div>
-
-				<div class="questions__item-wrapper">
-					<div class="questions__item-title-wrapper">
-						<h2 class="questions__item-title">
-							Что нужно для занятий?
-						</h2>
-						<div class="questions__item-title-btn"></div>
-					</div>
-					<div class="questions__item-text">
-						it. Voluptates necessitatibus culpa nulla placeat hic minima, aspernatur ducimus non esse porro!
-						Dolore ipsum facilis optio aut excepturi cum distinctio aliquid delectus.it. Voluptates necesducimus non esse porro!
-						Dolore ipsum faccilis optio aut excepturi cum distinctio aliquid delectus.it. Voluptates neducimus non esse porro!
-						Dolore ipsum facilis optio aut excepturi cum distinctio aliquid delectus.it. Voluptates nesitatibus
-						culpa nulla placeat hic minima, aspernatur ducimus non esse porro! Dolore ipsum facilis optio aut
-						excepturi cum distinctio aliquid delectus.ilis optio aut excepturi cum distinctio aliquid delectus.it. Voluptates neducimus non esse porro!
-						Dolore ipsum facilis optio aut excepturi cum distinctio aliquid delectus.it. Voluptates nesitatibus
-						culpa nulla placeat hic minima, aspernatur ducimus non esse porro! Dolore ipsum facilis optio aut
-						excepturi cum distinctio aliquid delectus.
-					</div>
+				<div class="questions__item-text">
+					Наш курс предназначен для тех, кто хочет научиться программировать, интересуется мобильными
+					приложениями и хочет сделать первые шаги в IT. Преподаватель подробно объяснит основы программирования
+					на языке Dart и сопроводит ученика до получения им результата — разработки собственного приложения или
+					игры.
 				</div>
-
-				<div class="questions__item-wrapper">
-					<div class="questions__item-title-wrapper">
-						<h2 class="questions__item-title">
-							Как формируются группы?
-						</h2>
-						<div class="questions__item-title-btn"></div>
-					</div>
-					<div class="questions__item-text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, impedit maxime reiciendis magnam
-						sequi maiores hic molestiait. Voluptates necessitatibus culpa nulla placeat hic minima, aspernatur
-						ducimus non esse porro! Dolore ipsum facilis optio aut excepturi cum distinctio aliquid delectus.it.
-						Voluptates necessitatibus culpa nulla placeat hic minima, aspernatur ducimus non esse porro! Dolore
-						ipsum facilis optio aut excepturi cum distinctio aliquid delectus.s qui fuga modi eveniet voluptates
-						perspiciatis quos consequuntur voluptatem. Vitae sed ratione alias.
-					</div>
-				</div>
-
-				<div class="questions__item-wrapper">
-					<div class="questions__item-title-wrapper">
-						<h2 class="questions__item-title">
-							Как проходят занятия?
-						</h2>
-						<div class="questions__item-title-btn"></div>
-					</div>
-					<div class="questions__item-text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, impedit maxime reiciendis magnam
-						sequi maiores hic molestias qui fuga modi eveniet voluptates perspiciatis quos consequuntur
-						voluptatem. Vitae sed ratione alias.
-					</div>
-				</div>
-
-				<div class="questions__item-wrapper">
-					<div class="questions__item-title-wrapper">
-						<h2 class="questions__item-title">
-							Кто разрабатывал курс?
-						</h2>
-						<div class="questions__item-title-btn"></div>
-					</div>
-					<div class="questions__item-text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, impedit maxime reiciendis magnam
-						sequi maiores hic molestias qui fuga modi eveniet voluptates perspiciatis quos consequuntur
-						voluptatem. Vitae sed ratione alias.
-					</div>
-				</div>
-
-				<div class="questions__item-wrapper">
-					<div class="questions__item-title-wrapper">
-						<h2 class="questions__item-title">
-							Что нужно для занятий?
-						</h2>
-						<div class="questions__item-title-btn"></div>
-					</div>
-					<div class="questions__item-text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, impedit maxime reiciendis magnam
-						sequi maiores hic molestias qui fuga modi eveniet voluptates perspiciatis quos consequuntur
-						voluptatem. Vitae sed ratione alias.
-					</div>
-				</div>
-
-				<div class="questions__item-wrapper">
-					<div class="questions__item-title-wrapper">
-						<h2 class="questions__item-title">
-							Как проверить результат?
-						</h2>
-						<div class="questions__item-title-btn"></div>
-					</div>
-					<div class="questions__item-text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, impedit maxime reiciendis magnam
-						sequi maiores hic molestias qui fuga modi eveniet voluptates perspiciatis quos consequuntur
-						voluptatem. Vitae sed ratione alias.
-					</div>
-				</div>
-
 			</div>
-		</section>
+
+			<div class="questions__item-wrapper">
+				<div class="questions__item-title-wrapper">
+					<h2 class="questions__item-title">
+						Что нужно для занятий?
+					</h2>
+					<div class="questions__item-title-btn"></div>
+				</div>
+				<div class="questions__item-text">
+					it. Voluptates necessitatibus culpa nulla placeat hic minima, aspernatur ducimus non esse porro!
+					Dolore ipsum facilis optio aut excepturi cum distinctio aliquid delectus.it. Voluptates necesducimus non
+					esse porro!
+					Dolore ipsum faccilis optio aut excepturi cum distinctio aliquid delectus.it. Voluptates neducimus non
+					esse porro!
+					Dolore ipsum facilis optio aut excepturi cum distinctio aliquid delectus.it. Voluptates nesitatibus
+					culpa nulla placeat hic minima, aspernatur ducimus non esse porro! Dolore ipsum facilis optio aut
+					excepturi cum distinctio aliquid delectus.ilis optio aut excepturi cum distinctio aliquid delectus.it.
+					Voluptates neducimus non esse porro!
+					Dolore ipsum facilis optio aut excepturi cum distinctio aliquid delectus.it. Voluptates nesitatibus
+					culpa nulla placeat hic minima, aspernatur ducimus non esse porro! Dolore ipsum facilis optio aut
+					excepturi cum distinctio aliquid delectus.
+				</div>
+			</div>
+
+			<div class="questions__item-wrapper">
+				<div class="questions__item-title-wrapper">
+					<h2 class="questions__item-title">
+						Как формируются группы?
+					</h2>
+					<div class="questions__item-title-btn"></div>
+				</div>
+				<div class="questions__item-text">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, impedit maxime reiciendis magnam
+					sequi maiores hic molestiait. Voluptates necessitatibus culpa nulla placeat hic minima, aspernatur
+					ducimus non esse porro! Dolore ipsum facilis optio aut excepturi cum distinctio aliquid delectus.it.
+					Voluptates necessitatibus culpa nulla placeat hic minima, aspernatur ducimus non esse porro! Dolore
+					ipsum facilis optio aut excepturi cum distinctio aliquid delectus.s qui fuga modi eveniet voluptates
+					perspiciatis quos consequuntur voluptatem. Vitae sed ratione alias.
+				</div>
+			</div>
+
+			<div class="questions__item-wrapper">
+				<div class="questions__item-title-wrapper">
+					<h2 class="questions__item-title">
+						Как проходят занятия?
+					</h2>
+					<div class="questions__item-title-btn"></div>
+				</div>
+				<div class="questions__item-text">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, impedit maxime reiciendis magnam
+					sequi maiores hic molestias qui fuga modi eveniet voluptates perspiciatis quos consequuntur
+					voluptatem. Vitae sed ratione alias.
+				</div>
+			</div>
+
+			<div class="questions__item-wrapper">
+				<div class="questions__item-title-wrapper">
+					<h2 class="questions__item-title">
+						Кто разрабатывал программу?
+					</h2>
+					<div class="questions__item-title-btn"></div>
+				</div>
+				<div class="questions__item-text">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, impedit maxime reiciendis magnam
+					sequi maiores hic molestias qui fuga modi eveniet voluptates perspiciatis quos consequuntur
+					voluptatem. Vitae sed ratione alias.
+				</div>
+			</div>
+
+			<div class="questions__item-wrapper">
+				<div class="questions__item-title-wrapper">
+					<h2 class="questions__item-title">
+						Что нужно для занятий?
+					</h2>
+					<div class="questions__item-title-btn"></div>
+				</div>
+				<div class="questions__item-text">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, impedit maxime reiciendis magnam
+					sequi maiores hic molestias qui fuga modi eveniet voluptates perspiciatis quos consequuntur
+					voluptatem. Vitae sed ratione alias.
+				</div>
+			</div>
+
+			<div class="questions__item-wrapper">
+				<div class="questions__item-title-wrapper">
+					<h2 class="questions__item-title">
+						Как проверить результат?
+					</h2>
+					<div class="questions__item-title-btn"></div>
+				</div>
+				<div class="questions__item-text">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, impedit maxime reiciendis magnam
+					sequi maiores hic molestias qui fuga modi eveniet voluptates perspiciatis quos consequuntur
+					voluptatem. Vitae sed ratione alias.
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<div class="overlay">
+		<div class="modal" id="consultation">
+			<form class="price__form modal-form" action="#" method="post">
+				<div class="modal__close">&times;</div>
+				<h2 class="price__form-title">Оставьте заявку</h2>
+				<div class="price__form-text">Наш менеджер свяжется с вами, чтобы ответить на все вопросы и
+					забронировать место в группе</div>
+				<input type="text" class="price__form-input" placeholder="Ваше имя">
+				<input type="email" class="price__form-input" placeholder="E-mail">
+				<input type="number" class="price__form-input" placeholder="Телефон">
+				<button class="price__form-btn">Оставить заявку</button>
+				<div class="price__form-personal-data">Отправляя заявку, вы даёте согласие на обработку своих
+					персональных данных в соответствии с политикой конфиденциальности</div>
+			</form>
+		</div>
+	</div>
 
 
 	<footer class="footer">
-			<div class="container">
-				<div class="footer__body">
-					<div class="footer__wrapper">
+		<div class="container">
+			<div class="footer__body">
+				<div class="footer__wrapper">
 
-						<div class="footer__item-section">
-							<div class="footer__item">© 2013–2020 АНО «еНано»</div>
-							<div class="footer__item">
-								<a href="#" class="footer__item-link">Условия использования портала</a>
-							</div>
+					<div class="footer__item-section">
+						<div class="footer__item">© 2013–2020 АНО «еНано»</div>
+						<div class="footer__item">
+							<a href="https://stemford.org/info/terms-and-conditions" class="footer__item-link">Условия использования портала</a>
 						</div>
+					</div>
 
-						<div class="footer__item-section">
-							<div class="footer__item center"> 
-								<a href="#" class="footer__item-link">Миссия и цели</a>
-								<span class="footer__item-divider"></span>
-								<a href="#" class="footer__item-link">Контакты</a>
-							</div>
-							<div class="footer__item">
-								<a href="#" class="footer__item-link">Политика конфиденциальности</a>
-							</div>
+					<div class="footer__item-section">
+						<div class="footer__item center">
+							<a href="https://stemford.org/info/mission" class="footer__item-link">Миссия и цели</a>
+							<span class="footer__item-divider"></span>
+							<a href="https://stemford.org/info/contacts" class="footer__item-link">Контакты</a>
 						</div>
+						<div class="footer__item">
+							<a href="https://stemford.org/info/privacy-policy" class="footer__item-link">Политика конфиденциальности</a>
+						</div>
+					</div>
 
-						<div class="footer__item-section">
-							<div class="footer__item">
-								<a href="#mobile-app" class="footer__item-link costum">Наверх</a>
-							</div>
+					<div class="footer__item-section">
+						<div class="footer__item">
+							<a href="#mobile-app" class="footer__item-link costum">Наверх</a>
 						</div>
 					</div>
 				</div>
 			</div>
-		</footer> 
+		</div>
+	</footer>
 
 
 

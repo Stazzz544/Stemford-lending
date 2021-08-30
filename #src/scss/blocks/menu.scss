@@ -72,6 +72,7 @@
 	}
 
 	&__submenu {
+		position: relative;
 		display: flex;
 		align-items: center;
 	}
@@ -83,6 +84,7 @@
 
 	&__submenu-text {
 		color: #282828;
+		cursor: pointer;
 	}
 }
 .burger {
@@ -96,6 +98,48 @@
 	align-items: center;
 }
 .burger-img {
+}
+
+
+
+
+.submenu {
+	position: absolute;
+	top: 68px;
+	box-shadow: 0px 8px 8px -4px rgba(0, 0, 0, 0.1);
+	transition: all .15s ease;
+	max-height: 0px;
+	visibility: visible;
+	overflow: hidden;
+	border-top: none;
+	
+	&__item {
+		padding: 10px 20px;
+		background-color: #ffffff;
+		border: 1px solid transparent;
+		border: 1px solid #F5F5F5;
+	}
+
+
+	&__item.flex{
+		display: flex;
+		align-items: center;
+
+	}
+	&__item-img{
+		margin-left: 10px;
+		width: 14px;
+		height: 14px
+	}
+
+	&__item-link {
+		color: #282828;
+	}
+}
+
+.submenu.open {
+	height: 1;
+	max-height: 600px;
 }
 
 
