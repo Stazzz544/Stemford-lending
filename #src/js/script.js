@@ -110,15 +110,57 @@ document.querySelector('.mobile-app__info-get-course').onclick = modalActive;
 
 //=============Navigation menu==============
 
-//forTeacher education
+
 
 const toggleClassFunc = function () {
 	document.querySelector('#forTeacherOpen').classList.toggle('open')
-}
-const toggleClassFunc1 = function () {
-	document.querySelector('#educationOpen').classList.toggle('open')
+	document.querySelector('#educationOpen').classList.remove('open')
+	document.querySelector('.mobile-app').addEventListener('click', e => {
+		if (!e.target.classList.contains('submenu__item-link')) {
+			document.querySelector('#forTeacherOpen').classList.remove('open')
+		}
+	})
 }
 
+const toggleClassFunc1 = function () {
+	document.querySelector('#educationOpen').classList.toggle('open')
+	document.querySelector('#forTeacherOpen').classList.remove('open')
+	document.querySelector('.mobile-app').addEventListener('click', e => {
+		if (!e.target.classList.contains('submenu__item-link')) {
+			document.querySelector('#educationOpen').classList.remove('open')
+		}
+	})
+}
 
 document.querySelector('#education').onclick = toggleClassFunc1
 document.querySelector('#forTeacher').onclick = toggleClassFunc
+
+
+//===========acordion=============
+
+const accordionMenu = document.querySelectorAll('.accordeon__menu-item')
+
+accordionMenu.forEach(e=> e.addEventListener('click', (e)=> {
+	const target = e.target.closest('.accordeon__menu-item')
+	const opener = target.querySelector('.accordeon__submenu')
+	opener.classList.toggle('active')
+}))
+
+
+const burger = document.querySelector('.burger').addEventListener('click', (e) => {
+	accordeon = document.querySelector('.accordeon')
+	accordeonWrapper = document.querySelector('.accordeon-wrapper')
+	accordionClose = document.querySelector('.accordeon__close-wrapper')
+
+	accordeon.classList.add('active')
+	accordeonWrapper.classList.add('active')
+
+	accordionClose.addEventListener('click', e => {
+		console.log(e.target)
+		accordeonWrapper.classList.remove('active')
+		accordeon.classList.remove('active')
+	})
+})
+
+
+

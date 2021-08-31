@@ -29,31 +29,31 @@
 							<img class="navigation__submenu-img" src="img/navigation/arrow-down.svg" alt="arrow">
 						</div>
 						<ul class="submenu" id='educationOpen'>
-							<li class="submenu__item">
-								<a href="https://stemford.org/education/courses" class="submenu__item-link">Курсы</a>
+							<li class="submenu__item-wrapper" >
+								<a class="submenu__item" href="https://stemford.org/education/courses" class="submenu__item-link">Курсы</a>
 							</li>
-							<li class="submenu__item">
-								<a href="https://stemford.org/education/webinars" class="submenu__item-link">Вебинары</a>
+							<li class="submenu__item-wrapper">
+								<a class="submenu__item" href="https://stemford.org/education/webinars" class="submenu__item-link">Вебинары</a>
 							</li>
-							<li class="submenu__item">
-								<a href="https://stemford.org/education/videos" class="submenu__item-link">Видео</a>
+							<li class="submenu__item-wrapper">
+								<a class="submenu__item" href="https://stemford.org/education/videos" class="submenu__item-link">Видео</a>
 							</li>
-							<li class="submenu__item">
-								<a href="https://stemford.org/education/projects" class="submenu__item-link">Проекты</a>
+							<li class="submenu__item-wrapper">
+								<a class="submenu__item" href="https://stemford.org/education/projects" class="submenu__item-link">Проекты</a>
 							</li>
-							<li class="submenu__item">
-								<a href="https://stemford.org/education/experiments" class="submenu__item-link">Экперименты</a>
+							<li class="submenu__item-wrapper">
+								<a class="submenu__item" href="https://stemford.org/education/experiments" class="submenu__item-link">Экперименты</a>
 							</li>
-							<li class="submenu__item">
-								<a href="https://stemford.org/education/tracks" class="submenu__item-link">Треки</a>
+							<li class="submenu__item-wrapper">
+								<a class="submenu__item" href="https://stemford.org/education/tracks" class="submenu__item-link">Треки</a>
 							</li>
-							<li class="submenu__item flex">
-								<a href="https://edunano.ru/nanotekhnologii/otkrytaya-kollektsiya/" class="submenu__item-link">Открытая коллекция</a>
+							<li class="submenu__item-wrapper icon">
+								<a class="submenu__item" href="https://edunano.ru/nanotekhnologii/otkrytaya-kollektsiya/" class="submenu__item-link">Открытая коллекция</a>
 								<img class="submenu__item-img" src="img/navigation/arrow-out-of-box.svg" alt="arrow">
 							</li>
-							<li class="submenu__item flex">
-								<a href="http://allotrop.ru/" class="submenu__item-link">Аллотроп</a>
-								<img class="submenu__item-img" src="img/navigation/arrow-out-of-box.svg" alt="arrow">
+							<li class="submenu__item-wrapper icon">
+								<a class="submenu__item" href="http://allotrop.ru/" class="submenu__item-link">Аллотроп</a>
+								<img class="submenu__item-img allotrop" src="img/navigation/arrow-out-of-box.svg" alt="arrow">
 							</li>
 						</ul>
 					</li>
@@ -75,17 +75,17 @@
 							<img class="navigation__submenu-img" src="img/navigation/arrow-down.svg" alt="arrow">
 						</div>
 						<ul class="submenu" id='forTeacherOpen'>
-							<li class="submenu__item">
-								<a href="https://stemford.org/education/teacher-courses" class="submenu__item-link">Курсы для педагогов</a>
+							<li class="submenu__item-wrapper">
+								<a  class="submenu__item" href="https://stemford.org/education/teacher-courses" class="submenu__item-link">Курсы для педагогов</a>
 							</li>
-							<li class="submenu__item">
-								<a href="https://stemford.org/education/teacher-webinars" class="submenu__item-link">Вебинары для педагогов</a>
+							<li class="submenu__item-wrapper" >
+								<a  class="submenu__item" href="https://stemford.org/education/teacher-webinars" class="submenu__item-link">Вебинары для педагогов</a>
 							</li>
-							<li class="submenu__item">
-								<a href="https://stemford.org/education/training" class="submenu__item-link">Повышение квалификации</a>
+							<li class="submenu__item-wrapper">
+								<a  class="submenu__item" href="https://stemford.org/education/training" class="submenu__item-link">Повышение квалификации</a>
 							</li>
-							<li class="submenu__item">
-								<a href="https://stemford.org/info/guidelines" class="submenu__item-link">Методические материалы</a>
+							<li class="submenu__item-wrapper">
+								<a  class="submenu__item" href="https://stemford.org/info/guidelines" class="submenu__item-link">Методические материалы</a>
 							</li>
 						</ul>
 					</li>
@@ -793,7 +793,112 @@
 		</div>
 	</footer>
 
-
+	<div class="accordeon-wrapper">
+	<div class="accordeon">
+		<div class="accordeon__header">
+			<div class="accordeon__close-wrapper">
+				<img class="accordeon__close" src="img/navigation/accordion/close.svg" alt="close">
+			</div>
+		</div>
+		<div class="accordeon__search-item">
+			<input  class="accordeon__search-item-inp" placeholder="Найти..." type="text">
+		</div>
+		<nav class="accordeon__content">
+			<ul class="accordeon__menu">
+				<li class="accordeon__menu-item">
+					<a href="" class="accordeon__menu-item-link">Домашняя страница</a>
+				</li>
+				<li class="accordeon__menu-item arrow">
+					<div class="accordeon__menu-item-link">Обучение</div>
+					<img class="accordeon__menu-item-icon" src="img/navigation/accordion/arrow.svg" alt="arrow">
+					<ul class="accordeon__submenu">
+						<li class="accordeon__submenu-item">
+							<a href="" class="accordeon__submenu-item-link">Курсы</a>
+						</li>
+						<li class="accordeon__submenu-item">
+							<a href="" class="accordeon__submenu-item-link">Вебинары</a>
+						</li>
+						<li class="accordeon__submenu-item">
+							<a href="" class="accordeon__submenu-item-link">Видео</a>
+						</li>
+						<li class="accordeon__submenu-item">
+							<a href="" class="accordeon__submenu-item-link">Проекты</a>
+						</li>
+						<li class="accordeon__submenu-item">
+							<a href="" class="accordeon__submenu-item-link">Экперименты</a>
+						</li>
+						<li class="accordeon__submenu-item">
+							<a href="" class="accordeon__submenu-item-link">Треки</a>
+						</li>
+						<li class="accordeon__submenu-item icon">
+							<a href="" class="accordeon__submenu-item-link">Открытая коллекция</a>
+							<img class="accordeon__submenu-item-link-img" src="img/navigation/accordion/arrow-out-of.svg" alt="arrow">
+						</li>
+						<li class="accordeon__submenu-item icon">
+							<a href="" class="accordeon__submenu-item-link">Аллотроп</a>
+							<img class="accordeon__submenu-item-link-img add" src="img/navigation/accordion/arrow-out-of.svg" alt="arrow">
+						</li>
+					</ul>
+				</li>
+				<li class="accordeon__menu-item">
+					<a href="" class="accordeon__menu-item-link">Конкурсы</a>
+				</li>
+				<li class="accordeon__menu-item">
+					<a href="" class="accordeon__menu-item-link">Выбрать вуз</a>
+				</li>
+				<li class="accordeon__menu-item">
+					<a href="" class="accordeon__menu-item-link">Стем Карьера</a>
+				</li>
+				<li class="accordeon__menu-item arrow">
+					<div class="accordeon__menu-item-link">Педагогу</div>
+					<img class="accordeon__menu-item-icon" src="img/navigation/accordion/arrow.svg" alt="arrow">
+					<ul class="accordeon__submenu">
+						<li class="accordeon__submenu-item">
+							<a href="" class="accordeon__submenu-item-link">Курсы для педагогов</a>
+						</li>
+						<li class="accordeon__submenu-item">
+							<a href="" class="accordeon__submenu-item-link">Вебинары для педагогов</a>
+						</li>
+						<li class="accordeon__submenu-item">
+							<a href="" class="accordeon__submenu-item-link">Повышение квалификации</a>
+						</li>
+						<li class="accordeon__submenu-item">
+							<a href="" class="accordeon__submenu-item-link">Методические материалы</a>
+						</li>
+					</ul>
+				</li>
+				<li class="accordeon__menu-item">
+					<a href="" class="accordeon__menu-item-link">Новости</a>
+				</li>
+				<li class="accordeon__menu-item">
+					<a href="" class="accordeon__menu-item-link">Мероприятия</a>
+				</li>
+				<li class="accordeon__menu-item arrow">
+					<div class="accordeon__menu-item-link">О нас</div>
+					<img class="accordeon__menu-item-icon" src="img/navigation/accordion/arrow.svg" alt="arrow">
+					<ul class="accordeon__submenu">
+						<li class="accordeon__submenu-item">
+							<a href="" class="accordeon__submenu-item-link">Миссия и цели</a>
+						</li>
+						<li class="accordeon__submenu-item">
+							<a href="" class="accordeon__submenu-item-link">Партнеры</a>
+						</li>
+						<li class="accordeon__submenu-item">
+							<a href="" class="accordeon__submenu-item-link">Образовательная сеть</a>
+						</li>
+						<li class="accordeon__submenu-item">
+							<a href="" class="accordeon__submenu-item-link">Контакты</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div class="accordeon__footer">
+			<a href="https://stemford.org/info/terms-and-conditions" class="accordeon__footer-link">Условия использования портала</a>
+			<a href="https://stemford.org/info/privacy-policy" class="accordeon__footer-link">Условия использования портала</a>
+		</div>
+	</div>
+	</div>
 
 
 	<script src="js/script.js"></script>
