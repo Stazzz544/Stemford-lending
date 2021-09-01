@@ -159,11 +159,21 @@ const burger = document.querySelector('.burger').addEventListener('click', (e) =
 	body.classList.add('body-lock')
 
 	accordionClose.addEventListener('click', e => {
-		console.log(e.target)
 		accordeonWrapper.classList.remove('active')
 		accordeon.classList.remove('active')
 		submenu.classList.remove('active')
 		body.classList.remove('body-lock')
+	})
+
+	body.addEventListener('click', e=>{
+		
+		console.log(e.target)
+		if (e.target.classList.contains('accordeon-wrapper')){
+			accordeonWrapper.classList.remove('active')
+			accordeon.classList.remove('active')
+			submenu.classList.remove('active')
+			body.classList.remove('body-lock')
+		}
 	})
 })
 

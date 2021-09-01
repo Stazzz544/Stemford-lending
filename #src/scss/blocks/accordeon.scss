@@ -82,6 +82,17 @@
 
 	&__search-item {
 		margin: 4px 18px;
+		position: relative;
+
+		&::before{
+			content   : '';
+			position: absolute;
+			top: 10px;
+			left: 20px;
+			width: 16px;
+			height: 16px;
+			background: url('../img/navigation/accordion/lupa.svg') 0 0/contain no-repeat;
+		}
 	}
 
 	&__search-item-inp {
@@ -95,6 +106,7 @@
 		line-height  : 16px;
 		transition   : all .15s ease;
 		padding-left : 50px;
+
 	}
 
 	&__menu-item {

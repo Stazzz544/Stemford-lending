@@ -7375,6 +7375,17 @@ button.swiper-pagination-bullet {
 
 .accordeon__search-item {
   margin: 4px 18px;
+  position: relative;
+}
+
+.accordeon__search-item::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 16px;
+  height: 16px;
+  background: url("../img/navigation/accordion/lupa.svg") 0 0/contain no-repeat;
 }
 
 .accordeon__search-item-inp {
