@@ -163,17 +163,22 @@ accordionMenu.forEach(e=> e.addEventListener('click', (e)=> {
 
 
 const burger = document.querySelector('.burger').addEventListener('click', (e) => {
-	accordeon = document.querySelector('.accordeon')
-	accordeonWrapper = document.querySelector('.accordeon-wrapper')
-	accordionClose = document.querySelector('.accordeon__close-wrapper')
+	const accordeon = document.querySelector('.accordeon')
+	const accordeonWrapper = document.querySelector('.accordeon-wrapper')
+	const accordionClose = document.querySelector('.accordeon__close-wrapper')
+	const body = document.querySelector('body')
+	const submenu = document.querySelector('.accordeon__submenu')
 
 	accordeon.classList.add('active')
 	accordeonWrapper.classList.add('active')
+	body.classList.add('body-lock')
 
 	accordionClose.addEventListener('click', e => {
 		console.log(e.target)
 		accordeonWrapper.classList.remove('active')
 		accordeon.classList.remove('active')
+		submenu.classList.remove('active')
+		body.classList.remove('body-lock')
 	})
 })
 

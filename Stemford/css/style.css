@@ -7436,7 +7436,7 @@ button.swiper-pagination-bullet {
 
 .accordeon__footer-link {
   margin-top: 8px;
-  display: inline-block;
+  display: block;
   width: auto;
   font-size: 13px;
   line-height: 20px;
@@ -7455,6 +7455,16 @@ button.swiper-pagination-bullet {
 .accordeon__submenu.active {
   height: 1;
   max-height: 600px;
+}
+
+.accordeon__menu-item {
+  position: relative;
+}
+
+.accordeon__menu-item-img {
+  position: absolute;
+  top: 18px;
+  left: 176px;
 }
 
 .accordeon__submenu-item.icon {
@@ -7718,14 +7728,112 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 1023px) {
   .accordeon-wrapper.active {
-    left: 0;
+    right: 0;
+    width: 100vw;
+  }
+
+  .accordeon.active {
+    width: 100%;
+    -webkit-transform: width 0.1s;
+        -ms-transform: width 0.1s;
+            transform: width 0.1s;
   }
 
   .accordeon {
-    width: 100vw;
-    -webkit-transition: 0.4s all ease;
-    -o-transition: 0.4s all ease;
-    transition: 0.4s all ease;
+    left: 100vw;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+
+  .accordeon__search-item {
+    max-width: 440px;
+  }
+
+  .accordeon__menu-item-icon {
+    position: static;
+    margin-right: 25px;
+    width: 17px;
+    height: 17px;
+  }
+
+  .accordeon__menu-item-link {
+    margin-left: 0;
+  }
+
+  .accordeon__submenu.active {
+    z-index: 1;
+    margin-left: 0vw;
+    width: 125vw;
+    max-width: 125vw;
+  }
+
+  .accordeon__submenu.active::before {
+    content: 'Назад';
+    font-size: 13px;
+    line-height: 20px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 32px;
+    left: 36px;
+  }
+
+  .accordeon__submenu.active::after {
+    content: '';
+    position: absolute;
+    top: 32px;
+    left: 17px;
+    width: 11px;
+    height: 22px;
+    background: url("../img/navigation/accordion/arrow-left.svg") 0 0/contain no-repeat;
+  }
+
+  .accordeon__submenu {
+    margin-left: 125vw;
+    padding-top: 115px;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    background: #321f54;
+  }
+
+  .accordeon__menu-item.arrow {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .accordeon__header {
+    padding: 50px 0;
+  }
+
+  .accordeon__submenu-item-link {
+    padding: 12px 24px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .accordeon__close-wrapper {
+    z-index: 1000;
+  }
+
+  .accordeon__submenu-item-link-img {
+    position: static;
+  }
+
+  .accordeon__submenu-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #5b4c76;
   }
 }
 
