@@ -60,6 +60,7 @@
 }
 .navigation {
 	display: flex;
+	align-items: center;
 
 	&__item {
 		margin-right: 24px;
@@ -79,12 +80,35 @@
 	&__submenu-img {
 		display: block;
 		margin-left: 6px;
-		margin-top: 2px;
+		margin-top: -2px;
 	}
-
+	&__submenu-img.arrow {
+		margin-top: 2px;
+		height: 6.3px;
+	}
+	&__submenu-img.position {
+		position: absolute;
+		top: 17px;
+		left: 14px;
+	}
 	&__submenu-text {
 		color: #282828;
 		cursor: pointer;
+	}
+	&__submenu-input{
+		width: 100%;
+		height: 41px;
+		max-width: 440px;
+		margin-top: 2px;
+		font-size: 15px;
+		padding: 13px 16px 13px 50px;
+		border-radius: 19px;
+		margin-right:12px;
+
+		cursor:auto;
+		&:focus{
+			border: 1px solid #dbdbdb;
+	 }
 	}
 }
 .burger {

@@ -5427,6 +5427,9 @@ button.swiper-pagination-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navigation__item {
@@ -5454,12 +5457,39 @@ button.swiper-pagination-bullet {
 .navigation__submenu-img {
   display: block;
   margin-left: 6px;
+  margin-top: -2px;
+}
+
+.navigation__submenu-img.arrow {
   margin-top: 2px;
+  height: 6.3px;
+}
+
+.navigation__submenu-img.position {
+  position: absolute;
+  top: 17px;
+  left: 14px;
 }
 
 .navigation__submenu-text {
   color: #282828;
   cursor: pointer;
+}
+
+.navigation__submenu-input {
+  width: 100%;
+  height: 41px;
+  max-width: 440px;
+  margin-top: 2px;
+  font-size: 15px;
+  padding: 13px 16px 13px 50px;
+  border-radius: 19px;
+  margin-right: 12px;
+  cursor: auto;
+}
+
+.navigation__submenu-input:focus {
+  border: 1px solid #dbdbdb;
 }
 
 .burger {
@@ -7498,6 +7528,7 @@ button.swiper-pagination-bullet {
   font-size: 15px;
   line-height: 22px;
   color: #fff;
+  width: 100%;
 }
 
 .accordeon__submenu-item-link:hover {
