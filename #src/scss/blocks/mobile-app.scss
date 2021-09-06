@@ -1,6 +1,6 @@
 .mobile-app {
-	background-color   : #F5F6F7;
-	padding            : 67px 0 120px 0;
+	background-color      : #F5F6F7;
+	padding               : 67px 0 120px 0;
 	// background-image   : url('../img/sections/mobile-app/grey-pixels.svg');
 	// background-repeat  : no-repeat;
 	// background-position: 43% 91%;
@@ -94,7 +94,15 @@
 
 	}
 
-	&__info-img {}
+
+	&__info-img-tablet {
+		display: none;
+	}
+
+	&__info-img {
+		display: block
+	}
+
 
 
 	&__info-img-img {
@@ -103,10 +111,10 @@
 	}
 
 	&__format {
-		margin-top     : 97px;
-		display        : flex;
-		flex-wrap      : wrap;
-		justify-content: space-between;
+		margin-top       : 97px;
+		display          : flex;
+		//flex-wrap      : wrap;
+		justify-content  : space-between;
 	}
 
 	&__forma-flex-wrapper {
@@ -178,14 +186,14 @@
 
 
 
-		  @keyframes moveLightRight {
-80% {
-	transform: translateX(-4em) skewX(-45deg);
-}
+@keyframes moveLightRight {
+	80% {
+		transform: translateX(-4em) skewX(-45deg);
+	}
 
-100% {
-	transform: translateX(18em) skewX(-45deg);
-}
+	100% {
+		transform: translateX(18em) skewX(-45deg);
+	}
 }
 
 
@@ -231,7 +239,11 @@
 	}
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 1024px) {  o
+	.mobile-app {
+		padding: 67px 0 40px 0;
+  }
+
 	.mobile-app__info-pixel.pix1-1 {
 		bottom: 56%;
 		left  : 67%;
@@ -265,15 +277,43 @@
 		justify-content: center;
 	}
 
-	.mobile-app__info-img-img {
+	.mobile-app__info-img-tablet {
 		display: block;
-		margin : 0 auto;
+	}
+
+	.mobile-app__info-img {
+		display: none;
+	}
+
+	.mobile-app__info-img-img {
+		display   : block;
+		margin    : 0 auto;
+		margin-top: -48px;
+	}
+
+	.mobile-app__info-title {
+		font-size  : 36px;
+		line-height: 46px;
+		margin-top: 16px;
+	}
+
+	.mobile-app__info-body {
+		font-size  : 15px;
+		line-height: 22px;
+	}
+
+	.mobile-app__info-get-course {
+		margin-top: 40px;
 	}
 }
 
 
 @media(max-width: 768px) {
-	
+	.mobile-app__info-title {
+		font-size: 25px;
+		line-height: 34px;
+		max-width: 330px;
+  }
 	.mobile-app__info-pixel.pix1-1 {
 		bottom: 52%;
 		left  : 83%;
@@ -289,26 +329,132 @@
 	}
 
 	.mobile-app__format-item {
-		margin-top: 52px;
+		//margin-top: 52px;
 	}
+
 	.mobile-app__format-item.item1 {
 		margin-top: 0;
 	}
 }
 
-@media(max-width: 572px) {
-	.mobile-app__info-pixel.pix1-1 {
-		bottom: 36%;
-		left: 92%;
-  }
+
+@media(max-width: 720px) {
+	.mobile-app__info-img-tablet{
+
+	}
+
+	.mobile-app__format-item {
+		width : 221px;
+		height: 143px;
+	}
+
+	.mobile-app__format-item-title {
+		font-size  : 19px;
+		line-height: 31px;
+	}
+
+	.mobile-app__format-item-img {
+		margin-top: 16px;
+	}
+
+	.mobile-app__format-item-img-1 {
+		margin-top: 5px;
+		max-height: 63px;
+	}
+
+	.mobile-app__format-item-img-2 {
+		max-height: 47px;
+	}
+
+	.mobile-app__format-item-img-3 {
+		max-height: 60px;
+	}
+
+	.mobile-app__format-item-img-4 {
+		max-height: 55px;
+	}
+
+	.mobile-app__format-item-text {
+		font-size: 11px;
+	}
+
+	.mobile-app__format-item.item4 {
+		margin-top: 14px;
+	}
+
+	.mobile-app__format-item.item2 {
+		margin-top: 14px;
+	}
+
+	.mobile-app__forma-flex-wrapper {
+		margin: 0 7px;
+	}
 }
 
-@media(max-width: 425px) {
-	.mobile-app__info-title {
-		font-size: 27px;
-		line-height: 41px;
+@media(max-width: 572px) {
+	.mobile-app__info-img-img {
+		margin-top: -15px;
+	}
+}
+
+
+@media(max-width: 572px) {
+	.mobile-app {
+		padding: 67px 0 50px 0;
+  }
+	.mobile-app__info-pixel.pix1-1 {
+		bottom: 36%;
+		left  : 92%;
+	}
+}
+
+@media(max-width: 498px) {
+	.mobile-app__info-pixel.pix2 {
+		bottom: -7%;
+		left: 68%;
+  }
+	.mobile-app__format {
+		margin-top: 72px;
 	}
 	.mobile-app__format-item {
-		width: 280px
+		width : 138px;
+		height: 96px;
 	}
+	.mobile-app__format-item-img {
+		margin-top: 5px;
+	}
+	.mobile-app__format-item-img-1 {
+		margin-top: 2px;
+		max-height: 43px;
+	}
+	.mobile-app__format-item-img-3 {
+		max-height: 44px;
+	}
+	.mobile-app__format-item-img-4 {
+		max-height: 47px;
+		margin-top: 0;
+  }
+	.mobile-app__format-item-img-2 {
+		max-height: 38px;
+  }
+  .mobile-app__format-item-title {
+	font-size: 14px;
+  }
+  .mobile-app__format-item-text {
+	font-size: 9px;
+}
+.mobile-app__format-item-title.two {
+	margin-top: 0px;
+}
+.mobile-app__format-item-title.four {
+	margin-top: 0;
+}
+}
+
+
+
+@media(max-width: 498px) {
+.mobile-app__info-img-img {
+	margin-top: -7px;
+}
 }

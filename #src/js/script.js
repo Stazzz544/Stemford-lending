@@ -10,21 +10,25 @@ const swiper = new Swiper('.swiper', {
 			initialSlide: 4,
 			spaceBetween: 0,
 			spaceBetween: 30,
+		
 		},
 		1350: {
 			slidesPerView: 3,
 			spaceBetween: 30,
+			
 		}
 	},
-	direction: 'horizontal',
+	// autoplay: {
+	// 	delay: 1000,
+	//  },
+	// delay: 400,
 	loop: true,
+	direction: 'horizontal',
 	centeredSlides: true,
 	initialSlide: 1,
 	//Расстояние между слайдами в пикселях.
-	delay: 400,
-	autoplay: {
-		delay: 3000,
-	 },
+	
+	
 	// Navigation arrows
 	navigation: {
 		nextEl: '.swiper-button-next',
@@ -32,6 +36,35 @@ const swiper = new Swiper('.swiper', {
 	},
 });
 
+
+//========animation mobile divices=========
+
+function removeWOWandAnimateClasses () {
+	if (document.body.offsetWidth <= 1024) {
+		const wow  = document.querySelectorAll('.wow');
+		const animate = document.querySelectorAll('.animate__animated')
+		const jackInTheBox  = document.querySelectorAll('.animate__jackInTheBox');
+		const fadeInLeftBig  = document.querySelectorAll('.animate__fadeInLeftBig');
+		const fadeInRightBig  = document.querySelectorAll('.animate__fadeInRightBig');
+		const fadeIn  = document.querySelectorAll('.animate__fadeIn');
+		
+		delClass(wow, 'wow')
+		delClass(animate, 'animate__animated')
+		delClass(jackInTheBox, 'animate__jackInTheBox')
+		delClass(fadeInLeftBig, 'animate__fadeInLeftBig')
+		delClass(fadeInRightBig, 'animate__fadeInRightBig')
+		delClass(fadeIn, 'animate__fadeIn')
+			function delClass (elements, className) {
+				
+				elements.forEach(element=>{
+					if (element.classList.contains(className)){
+						element.classList.remove(className)
+					}
+				})
+			}
+		}
+	}
+	removeWOWandAnimateClasses ()
 //======wow========
 new WOW().init();
 
@@ -177,5 +210,85 @@ const burger = document.querySelector('.burger').addEventListener('click', (e) =
 	})
 })
 
+
+//===========Mailer=============
+
+const forms = document.querySelectorAll('form');
+
+forms.forEach(item => {
+	postData(item);
+	
+});
+
+function postData(form) {
+	form.addEventListener('submit', (e) => {
+		e.preventDefault();
+		const loadingProgress = document.querySelector('.form__sending'),
+				loadingSuccess = document.querySelector('.form__succes'),
+				loadingFail = document.querySelector('.form__fail'),
+				loadingDarkWrapper = document.querySelector('.form__sending-wrapper'),
+				loadFormClose = document.querySelectorAll('.form__close');
+
+				
+				loadingDarkWrapper.classList.add('form__sending-wrapper_active');//затемняем фон
+				loadingProgress.classList.add('form_active');//отправка сообщения(процесс)
+
+
+				loadFormClose.forEach((e) => {
+					e.addEventListener('click', () => {
+						console.log('test');
+						loadingDarkWrapper.classList.remove('form__sending-wrapper_active');
+
+						if (loadingSuccess.classList.contains('form_active')) {
+							loadingSuccess.classList.remove('form_active');
+
+						} else if (loadingFail.classList.contains('form_active')) {
+							loadingFail.classList.remove('form_active');
+						}
+					});
+				});
+
+
+
+		const request = new XMLHttpRequest();
+		request.open('POST', 'mailer/smart.php');
+
+		request.setRequestHeader('Content-type', 'application/json');
+		const formData = new FormData(form);
+
+		const object = {};
+		formData.forEach(function(value, key){
+			object[key] = value;
+		});
+
+		const json = JSON.stringify(object)
+
+		request.send(json);
+
+		request.addEventListener('load', () => {
+			if (request.status === 200) {
+				//console.log(request.response);
+
+				loadingProgress.classList.remove('form_active');
+				loadingSuccess.classList.add('form_active');
+
+				form.reset();
+				setTimeout(() => {
+					loadingSuccess.classList.remove('form_active');
+					loadingDarkWrapper.classList.remove('form__sending-wrapper_active');
+				}, 10000);
+
+			} else {
+				loadingProgress.classList.remove('form_active');
+				loadingFail.classList.add('form_active');
+
+				setTimeout(() => {
+					loadingFail.classList.remove('form_active');
+					loadingDarkWrapper.classList.remove('form__sending-wrapper_active');
+				}, 10000);
+			}
+		});
+	});
+}
 
 
