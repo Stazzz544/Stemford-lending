@@ -1,4 +1,5 @@
 .footer {
+	border-top: 0.5px solid rgb(220, 220, 220);
 	background: #F5F5F5;
 
 	&__body {
@@ -11,6 +12,9 @@
 		height         : 100%;
 		display        : flex;
 		justify-content: space-between;
+		font-size: 13px;
+		width: 1320px;
+		margin: 0 auto;
 	}
 
 	&__item-section {
@@ -33,6 +37,7 @@
 
 	&__item-link {
 		font-size: 13px;
+		color: #282828;
 	}
 
 	&__item-link.costum {
@@ -49,19 +54,33 @@
 			background: url('../img/sections/footer/arrow-up.svg') 50% no-repeat;
 		}
 	}
-
 	&__item-divider {
 		margin          : 0 8px;
-		width           : 1px;
+		width           : 0.6px;
 		height          : 12px;
 		background-color: #282828;
 	}
 }
 
 
+@media(max-width: 1480px) {
+	.footer__wrapper{
+		width: 1140px
+	}
+}
+
+
+
+@media(max-width: 1280px) {
+	.footer__wrapper{
+		width: 960px
+	}
+}
+
 @media(max-width: 1024px) {
 	.footer__wrapper{
 		flex-wrap: wrap-reverse;
+		width: 100%;
 	}
 	.footer__item-section{
 		flex: 0 0 50%;
@@ -73,11 +92,22 @@
 		margin-left: 18px;
 	}
 	.footer__body {
-		min-height: 133px;
+		min-height: 139px;
 	}
 	.footer__item-section.s3{
 		margin-bottom: 20px;
 	}
+	.footer .container{
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+}
+
+@media(max-width: 768px) {
+	.footer__wrapper{
+		width: 100%;
+	}
+
 }
 
 @media(max-width: 480px) {
@@ -85,11 +115,19 @@
 		flex: 0 0 100%;
 		justify-content: stretch;
 	}
+	.footer .container{
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+	.footer__item-divider {
+		width           : 1px;
+	}
+
 	.footer__item-section.s1{
 		margin-bottom: 20px;
 	}
 	.footer{
-		padding-top: 43px;
+		padding-top: 23px;
 		padding-bottom: 24px;
 	}
 	.footer__body{

@@ -1,5 +1,5 @@
 .tech-of-future {
-	padding: 53px 0px 120px 0px;
+	padding: 53px 0px 90px 0px;
 	background-color: #FFFFFF;
 	// background-image: url('../img/sections/tehnology/grey-pixeles.svg');
 	// background-repeat: no-repeat;
@@ -320,6 +320,9 @@
 	.tech-of-future__element{
 		margin-top: 35px;
 	}
+	.tech-of-future .container {
+		overflow: hidden;
+	}
 }
 
 @media(max-width: 630px){
@@ -357,7 +360,7 @@
 	.tech-of-future__img-img {
 		height: 186px;
 		left: auto;
-		right: -18px;
+		right: -44px;
 		bottom: 147px;
   }
   .tech-of-future__img-wrapper {

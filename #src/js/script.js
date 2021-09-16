@@ -18,10 +18,10 @@ const swiper = new Swiper('.swiper', {
 			
 		}
 	},
-	// autoplay: {
-	// 	delay: 1000,
-	//  },
-	// delay: 400,
+	autoplay: {
+		delay: 7000,
+	 },
+	delay: 400,
 	loop: true,
 	direction: 'horizontal',
 	centeredSlides: true,
