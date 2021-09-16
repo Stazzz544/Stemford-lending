@@ -106,6 +106,7 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		text-align: center;
+		align-content: space-between;
 	}
 
 	&__company-logo {
@@ -279,10 +280,14 @@
 
 @media(max-width: 1020px){
 	.tech-of-future__companys-logos{
-		height: 86px;
+		margin-top: 38px;
+		height: 80px;
 	}
 	.tech-of-future {
-		padding: 53px 0 7px 0;
+		padding: 53px 0 44px 0;
+  }
+  .tech-of-future__companys-subtitle{
+	margin-top: 43px;
   }
 }
 
@@ -322,7 +327,7 @@
 	.tech-of-future__img-img{
 		height: 186px;
 		left: -65px;
-		bottom: 127px;
+		bottom: 130px;
 	}
 .tech-of-future__icons-wrapper{
 		margin-top: 32px;
@@ -341,15 +346,19 @@
 
 @media(max-width: 575px){
 	.tech-of-future__companys-logos{
-		height: 130px;
+		height: 137px;
+	}
+	.tech-of-future__icons-wrapper{
+		width: 285px;
 	}
 }
 
 @media(max-width: 480px){
 	.tech-of-future__img-img {
 		height: 186px;
-		left: -26px;
-		bottom: 143px;
+		left: auto;
+		right: -18px;
+		bottom: 147px;
   }
   .tech-of-future__img-wrapper {
 	padding: 45px 30px 45px 25px;
@@ -363,7 +372,7 @@
 }
 @media(max-width: 363px){
 	.tech-of-future__companys-logos{
-		height: 180px;
+		height: 235px;
 	}
 	.tech-of-future {
 		padding: 53px 0 34px 0;

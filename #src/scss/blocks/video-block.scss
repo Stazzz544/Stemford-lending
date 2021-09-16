@@ -33,14 +33,14 @@
 
 		&__subtitle {
 			margin-top: 11px;
-			margin-bottom: 29px;
+			margin-bottom: 32px;
 			font-weight: bold;
 			font-size: 18px;
 			line-height: 24px;
 		}
 
 		&__text {
-			margin-top: 15px;
+			margin-top: 13px;
 			font-size: 15px;
 			line-height: 22px;
 		}
@@ -56,7 +56,7 @@
 		padding-top: 194px;
 	}
 	.video-block__subtitle{
-		margin-bottom: 30px;
+		margin-bottom: 37px;
 	}
 	.video-block__wrapper{
 		flex-direction: column;
@@ -70,6 +70,9 @@
 @media (max-width: 1024px) {
 	.video-block{
 		padding-bottom: 50px;
+	}
+	.video-block__text{
+		margin-top: 29px;
 	}
 }
 

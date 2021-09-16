@@ -186,15 +186,6 @@
 
 
 
-@keyframes moveLightRight {
-	80% {
-		transform: translateX(-4em) skewX(-45deg);
-	}
-
-	100% {
-		transform: translateX(18em) skewX(-45deg);
-	}
-}
 
 
 @media(max-width: 1450px) {
@@ -438,10 +429,11 @@
 		max-height: 38px;
   }
   .mobile-app__format-item-title {
-	font-size: 14px;
+	font-size: 16px;
   }
   .mobile-app__format-item-text {
-	font-size: 9px;
+	font-size: 14px;
+	margin-top: -2px;
 }
 .mobile-app__format-item-title.two {
 	margin-top: 0px;
@@ -449,11 +441,12 @@
 .mobile-app__format-item-title.four {
 	margin-top: 0;
 }
+.mobile-app__format-item-title.three{
+	margin-top: -4px;
 }
-
-
-
-@media(max-width: 498px) {
+.mobile-app__format-item-title.four{
+	margin-top: -5px;
+}
 .mobile-app__info-img-img {
 	margin-top: -7px;
 }

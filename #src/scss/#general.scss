@@ -39,7 +39,7 @@ html{
 .reflect-btn{
 	position: relative;
 	overflow: hidden;
-	&:before {
+	&:hover:before {
 		content: ""; /* отображает псевдоэлемент */
 		position: absolute; /* абсолютное позиционирование */
 		top: 0; /* верхняя координата */
@@ -48,9 +48,30 @@ html{
 		height: 100%; /* высота как у оригинала */
 		background-color: rgba(255, 255, 255, 0.3); /* белый цвет с полупрозрачностью */
 		transform: translateX(-4em) skewX(-45deg);    
-		animation: 3s moveLightRight infinite;
-  }    
+		//animation: 3s moveLightRight infinite;
+		animation-name: moveLightRight;
+		animation-duration: 2.5s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: normal;
+		animation-play-state: running;
+		animation-delay: 0s;
+	} 
 }
+@keyframes moveLightRight {
+	0% {
+		transform: translateX(-4em) skewX(-45deg);
+	}
+
+	13% {
+		transform: translateX(18em) skewX(-45deg);
+	}
+	100% {
+		transform: translateX(18em) skewX(-45deg);
+	}
+}
+
+
 
 @keyframes moveLight {
 	from {
