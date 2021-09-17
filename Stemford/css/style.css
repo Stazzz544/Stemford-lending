@@ -264,6 +264,171 @@ html {
   }
 }
 
+.pulseAnimate {
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.pulseAnimate.one {
+  -webkit-animation-name: PulsCustom1;
+          animation-name: PulsCustom1;
+}
+
+.pulseAnimate.two {
+  -webkit-animation-name: PulsCustom2;
+          animation-name: PulsCustom2;
+}
+
+.pulseAnimate.three {
+  -webkit-animation-name: PulsCustom3;
+          animation-name: PulsCustom3;
+}
+
+.pulseAnimate.four {
+  -webkit-animation-name: PulsCustom4;
+          animation-name: PulsCustom4;
+}
+
+@-webkit-keyframes PulsCustom1 {
+  10% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  17% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes PulsCustom1 {
+  10% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  17% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes PulsCustom2 {
+  35% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  42% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes PulsCustom2 {
+  35% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  42% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes PulsCustom3 {
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  67% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+
+  75% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes PulsCustom3 {
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  67% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+
+  75% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes PulsCustom4 {
+  85% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  93% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes PulsCustom4 {
+  85% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  93% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .pix1,
 .pix1-1,
 .pix1-2 {
@@ -6349,6 +6514,7 @@ button.swiper-pagination-bullet {
   margin: 0 10px;
   margin-top: 85px;
   padding: 38px 57px;
+  z-index: 3;
   max-width: 460px;
   -webkit-box-shadow: 0px 0px 31px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 31px 1px rgba(0, 0, 0, 0.1);
@@ -7334,6 +7500,7 @@ button.swiper-pagination-bullet {
   display: block;
   -webkit-animation: 0.6s moveLight;
           animation: 0.6s moveLight;
+  overflow-x: hidden;
 }
 
 .modal {
@@ -7689,6 +7856,126 @@ button.swiper-pagination-bullet {
   text-align: center;
   font-size: 20px;
   line-height: 27px;
+}
+
+.bg-pixel {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lifebg-position {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-pixel {
+  left: 50%;
+  left: translateX(-50%);
+}
+
+.bg-pixel.one {
+  top: 360px;
+}
+
+.bg-pixel.two {
+  top: 700px;
+}
+
+.bg-pixel.three {
+  top: 1180px;
+}
+
+.bg-pixel.four {
+  top: 1642px;
+}
+
+.bg-pixel.five {
+  top: 2042px;
+}
+
+.bg-pixel.six {
+  top: 2442px;
+}
+
+.bg-pixel.seven {
+  top: 2842px;
+}
+
+.bg-pixel.eight {
+  top: 3242px;
+}
+
+.bg-pixel.nine {
+  top: 3642px;
+}
+
+.bg-pixel.ten {
+  top: 4042px;
+}
+
+.bg-pixel.eleven {
+  top: 4442px;
+}
+
+.bg-pixel.twelve {
+  top: 4842px;
+}
+
+.bg-pixel.thirteen {
+  top: 5242px;
+}
+
+.bg-pixel.fourteen {
+  top: 5642px;
+}
+
+.bg-pixel.fifteen {
+  top: 6042px;
+}
+
+.bg-pixel.seventeen {
+  top: 6442px;
+}
+
+.bg-pixel.eighteen {
+  top: 6842px;
+}
+
+.bg-pixel.nineteen {
+  top: 7242px;
+}
+
+.mobile-app,
+.tech-of-future,
+.video-block,
+.study-process,
+.tabs-section,
+.course-programm,
+.questions {
+  position: static;
+  z-index: 0;
+}
+
+.container-mobile-app,
+.container-tech-of-future,
+.container-video-block,
+.container-study-process,
+.container-tabs-section,
+.container-course-programm,
+.container-questions {
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 1480px) {
@@ -8582,12 +8869,8 @@ button.swiper-pagination-bullet {
 
   .tech-of-future__img-wrapper {
     max-height: 430px;
-    padding: 30px 30px 45px 25px;
-  }
-
-  .tech-of-future__img-wrapper {
     margin: 0 auto;
-    margin-top: 116px;
+    margin-top: 90px;
     padding: 48px 58px 38px 59px;
   }
 }
@@ -8737,10 +9020,36 @@ button.swiper-pagination-bullet {
 
   .tabs-section__tab-nav-wrapper {
     height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .tabs-section__text-wrapper {
+    margin-top: 0;
+  }
+
+  .tabs-section__tab-nav-item-img {
+    width: 50px;
   }
 
   .tabs-section {
     padding-top: 0px;
+  }
+
+  .tabs-section__tab-nav-item:before {
+    display: none;
+  }
+
+  .tabs-section__tab-nav-item:after {
+    display: none;
+  }
+
+  .tabs-section__tab-nav-item-text {
+    display: none;
   }
 }
 
@@ -8855,6 +9164,7 @@ button.swiper-pagination-bullet {
 
   .study-process__box-img.two {
     width: 63px;
+    margin-top: 8px;
   }
 
   .study-process__box-img.three {

@@ -13,29 +13,77 @@
 	overflow: hidden;
 }
 
+.bg-pixel{
+	left: 50%;
+   left: translateX(-50%)
+}
+
 .bg-pixel.one{
 	top: 360px;
-	left: 50%;
-   left: translateX(-50%)
 }
 .bg-pixel.two{
-	top: 950px;
-	left: 50%;
-   left: translateX(-50%)
+	top: 700px;
 }
 .bg-pixel.three{
-	top: 1400px;
-	left: 50%;
-   left: translateX(-50%)
+	top: 1180px;
+}
+.bg-pixel.four{
+	top: 1642px;
+}
+.bg-pixel.five{
+	top: 2042px;
+}
+.bg-pixel.six{
+	top: 2442px;
+}
+.bg-pixel.seven{
+	top: 2842px;
+}
+.bg-pixel.eight{
+	top: 3242px;
+}
+.bg-pixel.nine{
+	top: 3642px;
+}
+.bg-pixel.ten{
+	top: 4042px;
+}
+.bg-pixel.eleven{
+	top: 4442px;
+}
+.bg-pixel.twelve{
+	top: 4842px;
+}
+.bg-pixel.thirteen{
+	top: 5242px;
 }
 
+.bg-pixel.fourteen{
+	top: 5642px;
+}
 
-.mobile-app, .tech-of-future{
+.bg-pixel.fifteen{
+	top: 6042px;
+}
+
+.bg-pixel.seventeen{
+	top: 6442px;
+}
+
+.bg-pixel.eighteen{
+	top: 6842px;
+}
+
+.bg-pixel.nineteen{
+	top: 7242px;
+}
+
+.mobile-app, .tech-of-future, .video-block, .study-process, .tabs-section, .course-programm, .questions{
 position: static;
 z-index: 0;
 }
 
-.container-mobile-app, .container-tech-of-future{
+.container-mobile-app, .container-tech-of-future, .container-video-block, .container-study-process, .container-tabs-section, .container-course-programm, .container-questions {
 	position: relative;
 	z-index: 2;
 }

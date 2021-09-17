@@ -11,7 +11,8 @@
 
 .overlay.active{
 	display        : block;
-	animation: 0.6s moveLight
+	animation: 0.6s moveLight;
+	overflow-x: hidden;
 }
 
 .modal {
