@@ -1,7 +1,8 @@
 @@include('wow.min.js');
+@@include('rellax.js');
 @@include('swiper-bundle.min.js');
 
-//===swiper slider===
+//===swipervar rellax = new Rellax('.rellax'); slider===
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
 	breakpoints: {
@@ -67,6 +68,12 @@ function removeWOWandAnimateClasses () {
 	removeWOWandAnimateClasses ()
 //======wow========
 new WOW().init();
+
+//parallax Relax
+var rellax = new Rellax('.rellax', {
+	center:false
+ });
+
 
 //main Tab function
 const tabs = document.querySelectorAll('.tabs-section__tab-nav-item');

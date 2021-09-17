@@ -7856,6 +7856,57 @@ button.swiper-pagination-bullet {
   line-height: 27px;
 }
 
+.bg-pixel {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lifebg-position {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-pixel.one {
+  top: 360px;
+  left: 50%;
+  left: translateX(-50%);
+}
+
+.bg-pixel.two {
+  top: 950px;
+  left: 50%;
+  left: translateX(-50%);
+}
+
+.bg-pixel.three {
+  top: 1400px;
+  left: 50%;
+  left: translateX(-50%);
+}
+
+.mobile-app,
+.tech-of-future {
+  position: static;
+  z-index: 0;
+}
+
+.container-mobile-app,
+.container-tech-of-future {
+  position: relative;
+  z-index: 2;
+}
+
 @media (max-width: 1480px) {
   .footer__wrapper {
     width: 1140px;
