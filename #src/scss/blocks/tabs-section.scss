@@ -236,9 +236,27 @@
 
 	.tabs-section__tab-nav-wrapper {
 		height: auto;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+	.tabs-section__text-wrapper {
+		margin-top: 0;
+	}
+	.tabs-section__tab-nav-item-img{
+		width: 50px;
 	}
 
 	.tabs-section {
 		padding-top: 0px;
 	}
+	.tabs-section__tab-nav-item:before{
+		display: none;
+	}
+	.tabs-section__tab-nav-item:after{
+		display: none;
+	}
+	.tabs-section__tab-nav-item-text{
+		display: none;
+	}
+	
 }

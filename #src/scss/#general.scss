@@ -1,4 +1,4 @@
-*{
+* {
 	font-family: Formular;
 	color: #282828;
 	//border: 1px red solid
@@ -9,11 +9,11 @@ a {
 	color: #321F54;
 }
 
-html{
+html {
 	scroll-behavior: smooth;
 }
 
-.container{
+.container {
 	margin: 0 auto;
 	padding: 0px 15px;
 	max-width: 1334px;
@@ -31,24 +31,32 @@ html{
 	width: 100%;
 }
 
-.body-lock{
-   overflow: hidden;
-   // position: fixed; <--это вроде как писать не обязательно
+.body-lock {
+	overflow: hidden;
+	// position: fixed; <--это вроде как писать не обязательно
 }
 
 //reflect of button
-.reflect-btn{
+.reflect-btn {
 	position: relative;
 	overflow: hidden;
+
 	&:hover:before {
-		content: ""; /* отображает псевдоэлемент */
-		position: absolute; /* абсолютное позиционирование */
-		top: 0; /* верхняя координата */
-		left: 0; /* левая координата */
-		width: 2em; /* относительная ширина */
-		height: 100%; /* высота как у оригинала */
-		background-color: rgba(255, 255, 255, 0.3); /* белый цвет с полупрозрачностью */
-		transform: translateX(-4em) skewX(-45deg);    
+		content: "";
+		/* отображает псевдоэлемент */
+		position: absolute;
+		/* абсолютное позиционирование */
+		top: 0;
+		/* верхняя координата */
+		left: 0;
+		/* левая координата */
+		width: 2em;
+		/* относительная ширина */
+		height: 100%;
+		/* высота как у оригинала */
+		background-color: rgba(255, 255, 255, 0.3);
+		/* белый цвет с полупрозрачностью */
+		transform: translateX(-4em) skewX(-45deg);
 		//animation: 3s moveLightRight infinite;
 		animation-name: moveLightRight;
 		animation-duration: 2.5s;
@@ -57,8 +65,9 @@ html{
 		animation-direction: normal;
 		animation-play-state: running;
 		animation-delay: 0s;
-	} 
+	}
 }
+
 @keyframes moveLightRight {
 	0% {
 		transform: translateX(-4em) skewX(-45deg);
@@ -67,6 +76,7 @@ html{
 	13% {
 		transform: translateX(18em) skewX(-45deg);
 	}
+
 	100% {
 		transform: translateX(18em) skewX(-45deg);
 	}
@@ -76,9 +86,80 @@ html{
 
 @keyframes moveLight {
 	from {
-		 transform: translateX(-4em) skewX(-45deg);
+		transform: translateX(-4em) skewX(-45deg);
 	}
+
 	to {
-		 transform: translateX(10em) skewX(-45deg);
+		transform: translateX(10em) skewX(-45deg);
 	}
+}
+
+.pulseAnimate {
+	animation-duration: 13s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.pulseAnimate.one {
+	animation-name: PulsCustom1;
+}
+
+.pulseAnimate.two {
+	animation-name: PulsCustom2;
+}
+
+.pulseAnimate.three {
+	animation-name: PulsCustom3;
+}
+
+.pulseAnimate.four {
+	animation-name: PulsCustom4;
+}
+
+@keyframes PulsCustom1 {
+	10% {
+		transform: scale(1)
 	}
+	17% {
+		transform: scale(1.2)
+	}
+	25% {
+		transform: scale(1)
+	}
+}
+
+@keyframes PulsCustom2 {
+	35% {
+		transform: scale(1)
+	}
+	42% {
+		transform: scale(1.2)
+	}
+	50% {
+		transform: scale(1)
+	}
+}
+
+@keyframes PulsCustom3 {
+	60% {
+		transform: scale(1)
+	}
+	67% {
+		transform: scale(1.2)
+	}
+	75% {
+		transform: scale(1)
+	}
+}
+
+@keyframes PulsCustom4 {
+	85% {
+		transform: scale(1)
+	}
+	93% {
+		transform: scale(1.2)
+	}
+	100% {
+		transform: scale(1)
+	}
+}

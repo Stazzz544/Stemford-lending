@@ -1,6 +1,7 @@
 .tech-of-future {
 	padding: 53px 0px 90px 0px;
 	background-color: #FFFFFF;
+
 	// background-image: url('../img/sections/tehnology/grey-pixeles.svg');
 	// background-repeat: no-repeat;
 	// background-position: 54% -18%;
@@ -10,13 +11,14 @@
 		display: flex;
 		justify-content: space-between;
 	}
-	&__info-pixel.pix3-1{
+
+	&__info-pixel.pix3-1 {
 		position: absolute;
 		bottom: -48px;
 		right: 0px;
 	}
-	&__text-wrapper {
-	}
+
+	&__text-wrapper {}
 
 	&__title {
 		font-weight: bold;
@@ -47,8 +49,7 @@
 		padding: 48px 58px 38px 59px;
 	}
 
-	&__tech-of-future__element{
-	}
+	&__tech-of-future__element {}
 
 	&__img-text {
 		color: #FFFFFF;
@@ -85,12 +86,12 @@
 		font-size: 14px;
 		color: #282828;
 	}
-	&__divider{
+
+	&__divider {
 		margin-top: 55px;
 	}
 
-	&__companys {
-	}
+	&__companys {}
 
 	&__companys-subtitle {
 		margin-top: 50px;
@@ -114,7 +115,7 @@
 		display: flex;
 		align-items: center;
 		height: 27px;
-		
+
 		// &:nth-child(2){
 		// 	margin-top: 15px;
 		// }
@@ -124,7 +125,7 @@
 	}
 
 	&__company-logo-img {
-		height:72%;
+		height: 72%;
 		-webkit-filter: grayscale(100%);
 		filter: grayscale(100%);
 		//transition: all 0.4s;
@@ -133,173 +134,234 @@
 		animation-timing-function: steps(1, end);
 		animation-delay: 2s;
 		animation-iteration-count: infinite;
-		&:hover{
+
+		&:hover {
 			-webkit-filter: none;
 			filter: none;
 		}
 	}
+
 	&__company-logo-img.one {
 		//height: 63px;
 		animation-name: companyOne;
 	}
+
 	&__company-logo-img.two {
-	//	height: 40px;
+		//	height: 40px;
 		transform: translateY(2px);
 		animation-name: companyTwo;
 	}
+
 	&__company-logo-img.three {
-	//	height: 43px;
-		animation-name:companythree;
+		//	height: 43px;
+		animation-name: companythree;
 	}
+
 	&__company-logo-img.four {
-	//	height: 84px;
+		//	height: 84px;
 		animation-name: companyfour;
 	}
+
 	&__company-logo-img.five {
 		height: 15px;
 		animation-name: companyfive;
 	}
+
 	&__company-logo-img.six {
-	//	height: 24px;
+		//	height: 24px;
 		animation-name: companysix;
 	}
+
 	&__company-logo-img.seven {
-	//	height: 30px;
+		//	height: 30px;
 		animation-name: companyseven;
 	}
+
 	&__company-logo-img.eight {
-	//	height: 45px;
-	transform: translateY(-3px);
+		//	height: 45px;
+		transform: translateY(-3px);
 		animation-name: companyeight;
 	}
+
 	&__company-logo-img.nine {
-	//	height: 28px;
+		//	height: 28px;
 		animation-name: companynine;
 	}
+
 	&__company-logo-img.ten {
-	//	height: 47px;
+		//	height: 47px;
 		animation-name: companyten;
 	}
 }
 
 @keyframes companyOne {
-	0%   { filter: none; }
-	10%  { -webkit-filter: grayscale(100%);
-			filter: grayscale(100%);
-		}
- }
- @keyframes companyTwo {
-	10%   { filter: none; }
-	20%  { -webkit-filter: grayscale(100%);
-			filter: grayscale(100%);
-		}
- }
- @keyframes companythree {
-	20%   { filter: none; }
-	30%  { -webkit-filter: grayscale(100%);
-			filter: grayscale(100%);
-		}
- }
-
- @keyframes companyfour {
-	30%   { filter: none; }
-	40%  { -webkit-filter: grayscale(100%);
-			filter: grayscale(100%);
-		}
- }
-
- @keyframes companyfive {
-	40%   { filter: none; }
-	50%  { -webkit-filter: grayscale(100%);
-			filter: grayscale(100%);
-		}
- }
-
- @keyframes companysix {
-	50%   { filter: none; }
-	60%  { -webkit-filter: grayscale(100%);
-			filter: grayscale(100%);
-		}
- }
-
- @keyframes companyseven {
-	60%   { filter: none; }
-	70%  { -webkit-filter: grayscale(100%);
-			filter: grayscale(100%);
-		}
- }
-
- @keyframes companyeight {
-	70%   { filter: none; }
-	80%  { -webkit-filter: grayscale(100%);
-			filter: grayscale(100%);
-		}
- }
-
- @keyframes companynine {
-	80%   { filter: none; }
-	90%  { -webkit-filter: grayscale(100%);
-			filter: grayscale(100%);
-		}
- }
-
- @keyframes companyten {
-	90%   { filter: none; }
-	100%  { -webkit-filter: grayscale(100%);
-			filter: grayscale(100%);
-		}
- }
-
-
-
-
-@media(max-width: 1160px){
-	.tech-of-future__info-wrapper{
-		
-		flex-direction: column;
+	0% {
+		filter: none;
 	}
-	.tech-of-future__text {
-		max-width: none;
-  }
-  .tech-of-future__img-wrapper{
-	  margin: 0 auto;
-	  margin-top: 30px;
-  }
-  .tech-of-future__icons-wrapper{
-	  margin-top: 130px;
-	  padding-left: 70px;
-	  width: 700px;
-	  flex-direction: column;
-	  height: 115px;
-  }
-  .tech-of-future__companys-logos{
-	  justify-content: space-around;
-  }
+
+	10% {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+}
+
+@keyframes companyTwo {
+	10% {
+		filter: none;
+	}
+
+	20% {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+}
+
+@keyframes companythree {
+	20% {
+		filter: none;
+	}
+
+	30% {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+}
+
+@keyframes companyfour {
+	30% {
+		filter: none;
+	}
+
+	40% {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+}
+
+@keyframes companyfive {
+	40% {
+		filter: none;
+	}
+
+	50% {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+}
+
+@keyframes companysix {
+	50% {
+		filter: none;
+	}
+
+	60% {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+}
+
+@keyframes companyseven {
+	60% {
+		filter: none;
+	}
+
+	70% {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+}
+
+@keyframes companyeight {
+	70% {
+		filter: none;
+	}
+
+	80% {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+}
+
+@keyframes companynine {
+	80% {
+		filter: none;
+	}
+
+	90% {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+}
+
+@keyframes companyten {
+	90% {
+		filter: none;
+	}
+
+	100% {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
 }
 
 
-@media(max-width: 1020px){
-	.tech-of-future__companys-logos{
+
+
+@media(max-width: 1160px) {
+	.tech-of-future__info-wrapper {
+
+		flex-direction: column;
+	}
+
+	.tech-of-future__text {
+		max-width: none;
+	}
+
+	.tech-of-future__img-wrapper {
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+	.tech-of-future__icons-wrapper {
+		margin-top: 130px;
+		padding-left: 70px;
+		width: 700px;
+		flex-direction: column;
+		height: 115px;
+	}
+
+	.tech-of-future__companys-logos {
+		justify-content: space-around;
+	}
+}
+
+
+@media(max-width: 1020px) {
+	.tech-of-future__companys-logos {
 		margin-top: 38px;
 		height: 80px;
 	}
+
 	.tech-of-future {
 		padding: 53px 0 44px 0;
-  }
-  .tech-of-future__companys-subtitle{
-	margin-top: 43px;
-  }
+	}
+
+	.tech-of-future__companys-subtitle {
+		margin-top: 43px;
+	}
 }
 
-@media(max-width: 1024px){
-	.tech-of-future__title{
+@media(max-width: 1024px) {
+	.tech-of-future__title {
 		font-size: 25px;
 	}
-	.tech-of-future__text{
+
+	.tech-of-future__text {
 		font-size: 15px;
 		line-height: 22px;
 	}
-	.tech-of-future__img-text{
+
+	.tech-of-future__img-text {
 		font-size: 14px;
 	}
 
@@ -310,87 +372,85 @@
 
 
 
-@media(max-width: 768px){
-	.tech-of-future__icons-wrapper{
+@media(max-width: 768px) {
+	.tech-of-future__icons-wrapper {
 		height: auto;
 		width: 305px;
 		padding: 0;
 		margin-top: 73px;
 	}
-	.tech-of-future__element{
+
+	.tech-of-future__element {
 		margin-top: 35px;
 	}
+
 	.tech-of-future .container {
 		overflow: hidden;
 	}
 }
 
-@media(max-width: 630px){
-	
-	.tech-of-future__img-img{
+@media(max-width: 630px) {
+
+	.tech-of-future__img-img {
 		height: 186px;
 		left: -65px;
 		bottom: 130px;
 	}
-.tech-of-future__icons-wrapper{
+
+	.tech-of-future__icons-wrapper {
 		margin-top: 32px;
-		
+
 	}
-	.tech-of-future__img-wrapper{
-		max-height: 430px;
-		padding: 30px 30px 45px 25px;;
-	}
+
 	.tech-of-future__img-wrapper {
+		max-height: 430px;
 		margin: 0 auto;
-		margin-top: 116px;
+		margin-top: 90px;
 		padding: 48px 58px 38px 59px;
-  }
+	}
 }
 
-@media(max-width: 575px){
-	.tech-of-future__companys-logos{
+@media(max-width: 575px) {
+	.tech-of-future__companys-logos {
 		height: 137px;
 	}
-	.tech-of-future__icons-wrapper{
+
+	.tech-of-future__icons-wrapper {
 		width: 285px;
 	}
 }
 
-@media(max-width: 480px){
+@media(max-width: 480px) {
 	.tech-of-future__img-img {
 		height: 186px;
 		left: auto;
 		right: -44px;
 		bottom: 147px;
-  }
-  .tech-of-future__img-wrapper {
-	padding: 45px 30px 45px 25px;
-}
+	}
+
+	.tech-of-future__img-wrapper {
+		padding: 45px 30px 45px 25px;
+	}
 }
 
-@media(max-width: 400px){
+@media(max-width: 400px) {
 	.tech-of-future__img-img {
 		bottom: 164px;
-  }
+	}
 }
-@media(max-width: 363px){
-	.tech-of-future__companys-logos{
+
+@media(max-width: 363px) {
+	.tech-of-future__companys-logos {
 		height: 235px;
 	}
+
 	.tech-of-future {
 		padding: 53px 0 34px 0;
-  }
+	}
 }
 
-@media(max-width: 335px){
+@media(max-width: 335px) {
 	.tech-of-future__img-img {
 		bottom: 183px;
-  }
+	}
 }
-
-// @media(max-width: 342px){
-// 	.tech-of-future__img-img {
-// 	left: -26px;
-// 	bottom: 182px;
-// 	}
-// }
